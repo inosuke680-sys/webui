@@ -90,12 +90,21 @@ class ArticleGenerator:
             JSON形式の記事データ
         """
         # データを最小化してトークン数を削減
+        # カテゴリの安全な取得
+        category_raw = restaurant_data.get('category')
+        if isinstance(category_raw, list) and len(category_raw) > 0:
+            category_display = category_raw[0]
+        elif isinstance(category_raw, str) and category_raw:
+            category_display = category_raw
+        else:
+            category_display = 'グルメ'
+
         compact_data = {
             "name": restaurant_data.get('name'),
-            "category": restaurant_data.get('category'),
+            "category": category_display,
             "rating": restaurant_data.get('rating'),
             "address": restaurant_data.get('address'),
-            "area": restaurant_data.get('area'),
+            "area": restaurant_data.get('area') or '',
             "budget": restaurant_data.get('budget'),
             "hours": restaurant_data.get('business_hours'),
         }
@@ -112,7 +121,7 @@ class ArticleGenerator:
 - 「〜と評判」「口コミで人気」等の表現で独自分析として記述
 
 【SEO最適化指示】
-- タイトル：「{compact_data.get('name')} | {compact_data.get('area', '')}の{compact_data.get('category', ['グルメ'])[0] if isinstance(compact_data.get('category'), list) else compact_data.get('category', 'グルメ')}」形式
+- タイトル：「{compact_data.get('name')} | {compact_data.get('area')}の{category_display}」形式
 - 検索意図：「地域名+料理ジャンル」「店名+口コミ」「店名+メニュー」を意識
 - meta_description：店舗の魅力→具体的情報→行動喚起の構成
 
