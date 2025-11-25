@@ -131,7 +131,7 @@ class ArticleGenerator:
 - 語尾のバリエーション（です/ます/でしょう/かもしれません）
 
 【出力JSON】JSONのみ出力。説明文不要。
-{{"seo_title":"60字以内","meta_description":"120-160字","slug":"english-slug","category":"japanese-food/western-food/chinese-food/cafe/bar/other","tags":["タグ1","タグ2"],"rating_display":{{"overall":3.5,"food":3.6,"service":3.5,"atmosphere":3.4,"value":3.7}},"menus":[{{"name":"名","description":"30字","price":"¥1000"}}],"reviews_summary":[{{"reviewer_initial":"A","date":"2024/01","rating":4,"content":"独自視点の80字評価文"}}],"detailed_analysis":{{"sections":[{{"heading":"見出し","content":"150-200字の独自分析"}}]}},"store_notice":{{"content":"150字のお知らせ"}},"seo_text":"150字のSEO文"}}
+{{"seo_title":"60字以内","meta_description":"120-160字","slug":"english-slug","category":"japanese-food/western-food/chinese-food/cafe/bar/other","tags":["タグ1","タグ2"],"rating_display":{{"overall":3.5,"food":3.6,"service":3.5,"atmosphere":3.4,"value":3.7}},"menus":[{{"name":"名","description":"30字","price":"¥1000"}}],"reviews_summary":[{{"reviewer_initial":"A","date":"2024/01","rating":4,"content":"独自視点の80字評価文"}}],"detailed_analysis":{{"sections":[{{"heading":"見出し","content":"150-200字の独自分析"}}]}},"recommendation":{{"content":"150字のおすすめポイント"}},"seo_text":"150字のSEO文"}}
 
 【生成量】menus:3個, reviews_summary:3個, detailed_analysis.sections:4個
 【評価】rating値を基準に各項目±0.2で調整"""
@@ -333,9 +333,9 @@ class ArticleGenerator:
         detailed_analysis = article_json.get('detailed_analysis', {})
         detailed_analysis_html = self._generate_detailed_analysis_html(detailed_analysis)
 
-        # 店舗からのお知らせHTML生成
-        store_notice = article_json.get('store_notice', {})
-        store_notice_html = self._generate_store_notice_html(store_notice)
+        # おすすめポイントHTML生成
+        recommendation = article_json.get('recommendation', {})
+        recommendation_html = self._generate_recommendation_html(recommendation)
 
         # SEOテキスト取得
         seo_text = article_json.get('seo_text', f"{name}の詳細情報をご紹介します。")
@@ -367,7 +367,7 @@ class ArticleGenerator:
             gallery_html=gallery_html,
             reviews_html=reviews_html,
             detailed_analysis_html=detailed_analysis_html,
-            store_notice_html=store_notice_html,
+            recommendation_html=recommendation_html,
             seo_text=seo_text
         )
 
@@ -467,12 +467,12 @@ class ArticleGenerator:
 
         return '\n'.join(sections_html)
 
-    def _generate_store_notice_html(self, store_notice: dict) -> str:
-        """店舗からのお知らせHTMLを生成"""
-        if not store_notice or not store_notice.get('content'):
+    def _generate_recommendation_html(self, recommendation: dict) -> str:
+        """おすすめポイントHTMLを生成"""
+        if not recommendation or not recommendation.get('content'):
             return ''
 
-        content = store_notice.get('content', '')
+        content = recommendation.get('content', '')
         # 改行を<br>タグに変換
         content = content.replace('\n', '<br>')
 

@@ -40,7 +40,7 @@ def build_complete_html(css_content: str, **kwargs) -> str:
     gallery_html = kwargs.get('gallery_html', '')
     reviews_html = kwargs.get('reviews_html', '')
     detailed_analysis_html = kwargs.get('detailed_analysis_html', '')
-    store_notice_html = kwargs.get('store_notice_html', '')
+    recommendation_html = kwargs.get('recommendation_html', '')
     seo_text = kwargs.get('seo_text', '')
 
     # 公式サイトがある場合は優先的に使用、ない場合は食べログURL
@@ -222,16 +222,16 @@ WordPress Swellテーマ用カスタムHTML
         </div>
         ''' if detailed_analysis_html else ''}
 
-        <!-- 店舗からのお知らせセクション -->
+        <!-- ウマ店編集部のおすすめセクション -->
         {f'''
         <div class="info-card" style="margin-bottom: 30px;">
-            <div class="info-card-icon">📢</div>
-            <h3>店舗からのお知らせ</h3>
+            <div class="info-card-icon">💡</div>
+            <h3>ウマ店編集部のおすすめ</h3>
             <p style="line-height: 1.8; color: #2c3e50;">
-                {store_notice_html}
+                {recommendation_html}
             </p>
         </div>
-        ''' if store_notice_html else ''}
+        ''' if recommendation_html else ''}
 
         <!-- アクセス・地図 -->
         <section class="map-section" id="map">
