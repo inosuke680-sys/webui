@@ -125,10 +125,12 @@ class ArticleGenerator:
 - 検索意図：「地域名+料理ジャンル」「店名+口コミ」「店名+メニュー」を意識
 - meta_description：店舗の魅力→具体的情報→行動喚起の構成
 
-【文章スタイル】
-- 読者が行きたくなる感情的価値を伝える（「こだわりの」「地元で愛される」等）
-- 具体的なシーン提案（「デート」「家族連れ」「一人飲み」等）
-- 語尾のバリエーション（です/ます/でしょう/かもしれません）
+【文章スタイル - 重要】
+- 読者が行きたくなる感情的価値を伝える
+- 具体的なシーン提案（デート、家族連れ、一人飲み等）
+- 語尾は必ず多様化すること。「〜ます」の連続禁止
+  良い例：「〜でしょう」「〜かもしれません」「〜ですね」「〜のが特徴」「〜と言えます」「〜が魅力」「〜がおすすめ」
+- 体言止めも適度に使用（例：「絶品の炭火焼き」「落ち着いた雰囲気」）
 
 【出力JSON】JSONのみ出力。説明文不要。
 {{"seo_title":"60字以内","meta_description":"120-160字","slug":"english-slug","category":"japanese-food/western-food/chinese-food/cafe/bar/other","tags":["タグ1","タグ2"],"rating_display":{{"overall":3.5,"food":3.6,"service":3.5,"atmosphere":3.4,"value":3.7}},"menus":[{{"name":"名","description":"30字","price":"¥1000"}}],"reviews_summary":[{{"reviewer_initial":"A","date":"2024/01","rating":4,"content":"独自視点の80字評価文"}}],"detailed_analysis":{{"sections":[{{"heading":"見出し","content":"150-200字の独自分析"}}]}},"recommendation":{{"content":"150字のおすすめポイント"}},"seo_text":"150字のSEO文"}}
