@@ -1,0 +1,1130 @@
+2025-11-09 15:37:22,375 - root - INFO - Application started
+2025-11-09 15:37:22,375 - wordpress_publisher - INFO - Testing WordPress connection...
+2025-11-09 15:37:22,931 - wordpress_publisher - ERROR - Connection failed: 401 - {"code":"rest_not_logged_in","message":"You are not currently logged in.","data":{"status":401}}
+2025-11-09 15:53:05,827 - root - INFO - Application started
+2025-11-09 15:53:05,827 - wordpress_publisher - INFO - Testing WordPress connection...
+2025-11-09 15:53:06,203 - wordpress_publisher - INFO - Connection successful! Logged in as: None
+2025-11-09 15:53:16,235 - root - INFO - Application started
+2025-11-09 15:53:16,259 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 15:53:16,259 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 15:53:20,509 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 15:53:20,509 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 15:53:23,233 - scraper - INFO - Found 0 images
+2025-11-09 15:53:23,236 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 15:53:23,685 - article_generator - WARNING - Template not found at C:\Users\user\umaten\templates\restaurant_template.html, using embedded template
+2025-11-09 15:53:23,686 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 15:55:00,359 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 15:55:00,372 - article_generator - INFO - Parsed article data: title=たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店, category=western-food
+2025-11-09 15:55:00,372 - article_generator - INFO - Article generated successfully
+2025-11-09 15:55:00,373 - root - INFO - HTML saved to: output\html\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_155500.html
+2025-11-09 15:55:00,376 - root - INFO - Metadata saved to: output\metadata\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_155500.json
+2025-11-09 15:55:00,377 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店
+2025-11-09 15:55:00,377 - wordpress_publisher - INFO - Fetching category ID for slug: western-food
+2025-11-09 15:55:00,865 - wordpress_publisher - INFO - Found category ID: 452
+2025-11-09 15:55:01,581 - wordpress_publisher - INFO - Post created successfully! ID: 4189, URL: https://umaten.jp/?p=4189
+2025-11-09 15:55:01,582 - root - INFO - Application finished successfully
+2025-11-09 16:35:35,841 - root - INFO - Application started
+2025-11-09 16:35:35,867 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:35:35,867 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:35:41,202 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:35:41,202 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:35:46,187 - scraper - INFO - Found 0 images
+2025-11-09 16:35:46,189 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 16:35:46,661 - article_generator - WARNING - Template not found at C:\Users\user\umaten\templates\restaurant_template.html, using embedded template
+2025-11-09 16:35:46,661 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 16:37:17,675 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 16:37:17,691 - article_generator - INFO - Parsed article data: title=たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店, category=western-food
+2025-11-09 16:37:17,692 - article_generator - INFO - Article generated successfully
+2025-11-09 16:37:17,693 - root - INFO - HTML saved to: output\html\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_163717.html
+2025-11-09 16:37:17,694 - root - INFO - Metadata saved to: output\metadata\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_163717.json
+2025-11-09 16:37:17,695 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店
+2025-11-09 16:37:17,695 - wordpress_publisher - INFO - Fetching category ID for slug: western-food
+2025-11-09 16:37:18,505 - wordpress_publisher - INFO - Found category ID: 452
+2025-11-09 16:37:18,921 - wordpress_publisher - INFO - Post created successfully! ID: 4191, URL: https://umaten.jp/?p=4191
+2025-11-09 16:37:18,926 - root - INFO - Application finished successfully
+2025-11-09 16:45:11,495 - root - INFO - Application started
+2025-11-09 16:45:11,519 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:45:11,519 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:45:16,428 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:45:16,428 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:45:21,900 - scraper - INFO - Found 0 images
+2025-11-09 16:45:21,903 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 16:45:22,127 - article_generator - ERROR - Template not found at C:\Users\user\umaten\templates\restaurant_template.html
+2025-11-09 16:45:22,128 - root - ERROR - Application error: HTMLテンプレートが見つかりません: C:\Users\user\umaten\templates\restaurant_template.html
+Traceback (most recent call last):
+  File "C:\Users\user\umaten\main.py", line 199, in main
+    html_template = generator.load_html_template()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\umaten\src\article_generator.py", line 267, in load_html_template
+    raise FileNotFoundError(f"HTMLテンプレートが見つかりません: {path}")
+FileNotFoundError: HTMLテンプレートが見つかりません: C:\Users\user\umaten\templates\restaurant_template.html
+2025-11-09 16:47:37,437 - root - INFO - Application started
+2025-11-09 16:47:37,460 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:47:37,461 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 16:47:42,996 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:47:42,996 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 16:47:48,330 - scraper - INFO - Found 0 images
+2025-11-09 16:47:48,332 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 16:47:48,591 - article_generator - INFO - Loading HTML template from: C:\Users\user\umaten\templates\restaurant_template.html
+2025-11-09 16:47:48,593 - article_generator - INFO - Template loaded successfully (12751 characters)
+2025-11-09 16:47:48,593 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 16:49:14,731 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 16:49:14,739 - article_generator - INFO - Parsed article data: title=たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店, category=western-food
+2025-11-09 16:49:14,740 - article_generator - INFO - Article generated successfully
+2025-11-09 16:49:14,743 - root - INFO - HTML saved to: output\html\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_164914.html
+2025-11-09 16:49:14,744 - root - INFO - Metadata saved to: output\metadata\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_164914.json
+2025-11-09 16:49:14,744 - root - INFO - Application finished successfully
+2025-11-09 17:02:31,512 - root - INFO - Application started
+2025-11-09 17:02:31,535 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:02:31,535 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:02:34,904 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:02:34,904 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:02:39,650 - scraper - INFO - Found 0 images
+2025-11-09 17:02:39,652 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:02:39,875 - article_generator - INFO - Loading HTML template from: C:\Users\user\umaten\templates\restaurant_template.html
+2025-11-09 17:02:39,876 - article_generator - INFO - Template loaded successfully (12751 characters)
+2025-11-09 17:02:39,876 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:04:09,497 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:04:09,519 - article_generator - INFO - Claude API stop_reason: max_tokens
+2025-11-09 17:04:09,520 - article_generator - WARNING - Response was truncated due to max_tokens limit!
+2025-11-09 17:04:09,520 - article_generator - WARNING - Response length: 21118 characters
+2025-11-09 17:04:09,521 - article_generator - WARNING - HTML appears incomplete: </script> tag not found!
+2025-11-09 17:04:09,521 - article_generator - WARNING - Using incomplete HTML (length: 21110 characters)
+2025-11-09 17:04:09,522 - article_generator - INFO - Parsed article data: title=たこ焼き 菜々 - 湯の川温泉（たこ焼き） | ウマ店, category=western-food
+2025-11-09 17:04:09,522 - article_generator - INFO - Article generated successfully
+2025-11-09 17:04:09,523 - root - INFO - HTML saved to: output\html\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_170409.html
+2025-11-09 17:04:09,525 - root - INFO - Metadata saved to: output\metadata\たこ焼き-菜々---湯の川温泉たこ焼き_20251109_170409.json
+2025-11-09 17:04:09,525 - root - INFO - Application finished successfully
+2025-11-09 17:12:30,270 - root - INFO - Application started
+2025-11-09 17:12:30,312 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1053714/
+2025-11-09 17:12:30,313 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1053714/
+2025-11-09 17:12:35,519 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1053714/dtlphotolst/smp2/
+2025-11-09 17:12:35,519 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1053714/dtlphotolst/smp2/
+2025-11-09 17:12:40,512 - scraper - INFO - Found 0 images
+2025-11-09 17:12:40,514 - scraper - INFO - Scraped data: 居酒屋 花笑豊（イザカヤ ハナショウブ） - 松風町（居酒屋）
+2025-11-09 17:12:40,751 - article_generator - INFO - Loading HTML template from: C:\Users\user\umaten\templates\restaurant_template.html
+2025-11-09 17:12:40,752 - article_generator - INFO - Template loaded successfully (12751 characters)
+2025-11-09 17:12:40,752 - article_generator - INFO - Generating article for: 居酒屋 花笑豊（イザカヤ ハナショウブ） - 松風町（居酒屋）
+2025-11-09 17:14:08,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:14:08,022 - article_generator - INFO - Claude API stop_reason: max_tokens
+2025-11-09 17:14:08,022 - article_generator - WARNING - Response was truncated due to max_tokens limit!
+2025-11-09 17:14:08,022 - article_generator - WARNING - Response length: 21728 characters
+2025-11-09 17:14:08,023 - article_generator - WARNING - HTML appears incomplete: </script> tag not found!
+2025-11-09 17:14:08,023 - article_generator - WARNING - Using incomplete HTML (length: 21720 characters)
+2025-11-09 17:14:08,023 - article_generator - INFO - Parsed article data: title=居酒屋 花笑豊（イザカヤ ハナショウブ） - 松風町（居酒屋） | ウマ店, category=western-food
+2025-11-09 17:14:08,023 - article_generator - INFO - Article generated successfully
+2025-11-09 17:14:08,025 - root - INFO - HTML saved to: output\html\居酒屋-花笑豊イザカヤ-ハナショウブ---松風町居酒屋_20251109_171408.html
+2025-11-09 17:14:08,026 - root - INFO - Metadata saved to: output\metadata\居酒屋-花笑豊イザカヤ-ハナショウブ---松風町居酒屋_20251109_171408.json
+2025-11-09 17:14:08,027 - root - INFO - Application finished successfully
+2025-11-09 17:28:16,911 - root - INFO - Application started
+2025-11-09 17:28:16,934 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:28:16,934 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:28:21,876 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:28:21,876 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:28:26,478 - scraper - INFO - Found 0 images
+2025-11-09 17:28:26,480 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:28:26,773 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:28:50,148 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:28:50,167 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 17:28:50,168 - article_generator - INFO - Article data generated: 2272 characters
+2025-11-09 17:28:50,169 - article_generator - INFO - Article generated successfully: たこ焼き 菜々｜湯の川温泉駅徒歩2分の本格たこ焼き店
+2025-11-09 17:28:50,170 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_172850.html
+2025-11-09 17:28:50,172 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_172850.json
+2025-11-09 17:28:50,172 - root - INFO - Application finished successfully
+2025-11-09 17:36:26,885 - root - INFO - Application started
+2025-11-09 17:36:26,910 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:36:26,910 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:36:30,820 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:36:30,820 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:36:34,692 - scraper - INFO - Found 0 images
+2025-11-09 17:36:34,696 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:36:35,107 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:36:56,453 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:36:56,466 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 17:36:56,466 - article_generator - INFO - Article data generated: 2264 characters
+2025-11-09 17:36:56,467 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉 - 函館の人気たこ焼き店｜メニュー・口コミ
+2025-11-09 17:36:56,468 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen-hakodate_20251109_173656.html
+2025-11-09 17:36:56,469 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen-hakodate_20251109_173656.json
+2025-11-09 17:36:56,469 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉 - 函館の人気たこ焼き店｜メニュー・口コミ
+2025-11-09 17:36:56,469 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 17:36:57,061 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 17:36:57,348 - wordpress_publisher - INFO - Created new tag: たこ焼き (ID: 516)
+2025-11-09 17:36:57,589 - wordpress_publisher - INFO - Created new tag: 函館 (ID: 517)
+2025-11-09 17:36:57,821 - wordpress_publisher - INFO - Created new tag: 湯の川温泉 (ID: 518)
+2025-11-09 17:36:58,059 - wordpress_publisher - INFO - Created new tag: カジュアル (ID: 519)
+2025-11-09 17:36:58,309 - wordpress_publisher - INFO - Created new tag: テイクアウト (ID: 520)
+2025-11-09 17:36:58,533 - wordpress_publisher - INFO - Created new tag: 駅近 (ID: 521)
+2025-11-09 17:36:58,928 - wordpress_publisher - INFO - Post created successfully! ID: 4193, URL: https://umaten.jp/?p=4193
+2025-11-09 17:36:58,929 - root - INFO - Application finished successfully
+2025-11-09 17:44:06,815 - root - INFO - Application started
+2025-11-09 17:44:06,840 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:44:06,840 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:44:12,805 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:44:12,805 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:44:15,449 - scraper - INFO - Found 0 images
+2025-11-09 17:44:15,452 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:44:15,751 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:44:37,339 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:44:37,356 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 17:44:37,358 - article_generator - INFO - Article data generated: 2291 characters
+2025-11-09 17:44:37,359 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 - 湯の川温泉｜函館の絶品たこ焼き専門店
+2025-11-09 17:44:37,360 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_174437.html
+2025-11-09 17:44:37,364 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_174437.json
+2025-11-09 17:44:37,364 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 - 湯の川温泉｜函館の絶品たこ焼き専門店
+2025-11-09 17:44:37,364 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 17:44:37,895 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 17:44:38,380 - wordpress_publisher - INFO - Created new tag: 函館グルメ (ID: 522)
+2025-11-09 17:44:38,768 - wordpress_publisher - INFO - Created new tag: リーズナブル (ID: 523)
+2025-11-09 17:44:39,125 - wordpress_publisher - INFO - Post created successfully! ID: 4197, URL: https://umaten.jp/?p=4197
+2025-11-09 17:44:39,126 - root - INFO - Application finished successfully
+2025-11-09 17:50:51,018 - root - INFO - Application started
+2025-11-09 17:50:51,041 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:50:51,042 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:50:54,953 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:50:54,954 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:51:00,260 - scraper - INFO - Found 0 images
+2025-11-09 17:51:00,262 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:51:00,515 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:51:20,145 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:51:20,151 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 17:51:20,152 - article_generator - INFO - Article data generated: 2045 characters
+2025-11-09 17:51:20,153 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉 | 函館の人気たこ焼き店の口コミ・メニュー
+2025-11-09 17:51:20,154 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_175120.html
+2025-11-09 17:51:20,156 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_175120.json
+2025-11-09 17:51:20,156 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉 | 函館の人気たこ焼き店の口コミ・メニュー
+2025-11-09 17:51:20,156 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 17:51:20,596 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 17:51:21,885 - wordpress_publisher - INFO - Post created successfully! ID: 4200, URL: https://umaten.jp/?p=4200
+2025-11-09 17:51:21,886 - root - INFO - Application finished successfully
+2025-11-09 17:57:49,871 - root - INFO - Application started
+2025-11-09 17:57:49,894 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:57:49,895 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 17:57:53,264 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:57:53,264 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 17:57:58,011 - scraper - INFO - Found 0 images
+2025-11-09 17:57:58,013 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:57:58,253 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 17:58:18,474 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 17:58:18,482 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 17:58:18,483 - article_generator - INFO - Article data generated: 2045 characters
+2025-11-09 17:58:18,484 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 - 函館の人気たこ焼き店 | 口コミ・メニュー
+2025-11-09 17:58:18,485 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_175818.html
+2025-11-09 17:58:18,485 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_175818.json
+2025-11-09 17:58:18,486 - root - INFO - Application finished successfully
+2025-11-09 18:07:20,004 - root - INFO - Application started
+2025-11-09 18:07:20,028 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:07:20,028 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:07:24,645 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:07:24,645 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:07:27,465 - root - ERROR - Application error: name 'Path' is not defined
+Traceback (most recent call last):
+  File "C:\Users\user\umaten\main.py", line 182, in main
+    restaurant_data = scraper.scrape_tabelog(args.url)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\umaten\src\scraper.py", line 140, in scrape_tabelog
+    data['images'] = self.scrape_tabelog_photos(photo_url)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\umaten\src\scraper.py", line 190, in scrape_tabelog_photos
+    debug_dir = Path(__file__).parent.parent / 'logs'
+                ^^^^
+NameError: name 'Path' is not defined
+2025-11-09 18:11:11,938 - root - INFO - Application started
+2025-11-09 18:11:11,962 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:11:11,964 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:11:15,788 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:11:15,789 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:11:20,845 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:11:20,871 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:11:20,872 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:11:20,872 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:11:20,872 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:11:20,872 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:11:20,873 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:11:20,873 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:11:20,873 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:11:20,873 - scraper - INFO - Found 25 images
+2025-11-09 18:11:20,875 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:11:21,108 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:11:41,980 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:11:41,986 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:11:41,986 - article_generator - INFO - Article data generated: 2585 characters
+2025-11-09 18:11:41,986 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉 | 函館の人気たこ焼き店の口コミ・メニュー
+2025-11-09 18:11:41,988 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_181141.html
+2025-11-09 18:11:41,990 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_181141.json
+2025-11-09 18:11:41,990 - root - INFO - Application finished successfully
+2025-11-09 18:12:04,298 - root - INFO - Application started
+2025-11-09 18:12:04,323 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:12:04,323 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:12:07,620 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:12:07,621 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:12:11,665 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:12:11,690 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:12:11,692 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:12:11,692 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:12:11,692 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:12:11,692 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:12:11,692 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:12:11,694 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:12:11,694 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:12:11,694 - scraper - INFO - Found 25 images
+2025-11-09 18:12:11,696 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:12:11,930 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:12:32,461 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:12:32,472 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:12:32,472 - article_generator - INFO - Article data generated: 2593 characters
+2025-11-09 18:12:32,472 - article_generator - INFO - Article generated successfully: たこ焼き 菜々｜湯の川温泉駅徒歩2分の本格たこ焼き店【函館】
+2025-11-09 18:12:32,473 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen-hakodate_20251109_181232.html
+2025-11-09 18:12:32,474 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen-hakodate_20251109_181232.json
+2025-11-09 18:12:32,474 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々｜湯の川温泉駅徒歩2分の本格たこ焼き店【函館】
+2025-11-09 18:12:32,474 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 18:12:33,016 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 18:12:33,825 - wordpress_publisher - INFO - Created new tag: 軽食 (ID: 524)
+2025-11-09 18:12:34,113 - wordpress_publisher - INFO - Created new tag: B級グルメ (ID: 525)
+2025-11-09 18:12:34,572 - wordpress_publisher - INFO - Post created successfully! ID: 4202, URL: https://umaten.jp/?p=4202
+2025-11-09 18:12:34,573 - wordpress_publisher - INFO - Setting featured image for post 4202: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfcc7d55c5a69d7a5955.jpg
+2025-11-09 18:12:39,141 - wordpress_publisher - INFO - Featured image set successfully! Media ID: 4203
+2025-11-09 18:12:39,143 - root - INFO - Application finished successfully
+2025-11-09 18:18:58,107 - root - INFO - Application started
+2025-11-09 18:18:58,131 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:18:58,131 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:19:02,754 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:19:02,754 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:19:05,972 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:19:06,022 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:19:06,024 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:19:06,024 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:19:06,024 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:19:06,024 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:19:06,025 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:19:06,025 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:19:06,025 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:19:06,025 - scraper - INFO - Found 25 images
+2025-11-09 18:19:06,027 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:19:06,343 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:19:26,770 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:19:26,786 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:19:26,786 - article_generator - INFO - Article data generated: 2569 characters
+2025-11-09 18:19:26,787 - article_generator - INFO - Article generated successfully: たこ焼き 菜々｜湯の川温泉駅近くの人気たこ焼き店【函館市】
+2025-11-09 18:19:26,788 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_181926.html
+2025-11-09 18:19:26,789 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_181926.json
+2025-11-09 18:19:26,789 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々｜湯の川温泉駅近くの人気たこ焼き店【函館市】
+2025-11-09 18:19:26,789 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 18:19:27,306 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 18:19:28,432 - wordpress_publisher - INFO - Post created successfully! ID: 4205, URL: https://umaten.jp/?p=4205
+2025-11-09 18:19:28,432 - root - INFO - Application finished successfully
+2025-11-09 18:21:22,185 - root - INFO - Application started
+2025-11-09 18:21:22,210 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1053714/
+2025-11-09 18:21:22,210 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1053714/
+2025-11-09 18:21:26,343 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1053714/dtlphotolst/smp2/
+2025-11-09 18:21:26,343 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1053714/dtlphotolst/smp2/
+2025-11-09 18:21:31,336 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:21:31,412 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:21:31,414 - scraper - INFO - Found 321 <a> tags on page
+2025-11-09 18:21:31,414 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/255726/640x640_rect_170e3dbc6a57d87...
+2025-11-09 18:21:31,415 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/225334/640x640_rect_76958ae8e24e5bd...
+2025-11-09 18:21:31,415 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/225334/640x640_rect_534a9e14b5d415b...
+2025-11-09 18:21:31,416 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/225334/640x640_rect_4ffb2e0e07ee4cb...
+2025-11-09 18:21:31,416 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/221354/640x640_rect_fe40357073d92aa...
+2025-11-09 18:21:31,416 - scraper - INFO - Method 1 result: Found 60 images from <a> tags
+2025-11-09 18:21:31,416 - scraper - INFO - Found 60 images
+2025-11-09 18:21:31,420 - scraper - INFO - Scraped data: 居酒屋 花笑豊（イザカヤ ハナショウブ） - 松風町（居酒屋）
+2025-11-09 18:21:31,730 - article_generator - INFO - Generating article for: 居酒屋 花笑豊（イザカヤ ハナショウブ） - 松風町（居酒屋）
+2025-11-09 18:21:54,518 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:21:54,525 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:21:54,525 - article_generator - INFO - Article data generated: 2620 characters
+2025-11-09 18:21:54,526 - article_generator - INFO - Article generated successfully: 居酒屋 花笑豊 函館松風町 | 評価3.18の地元居酒屋
+2025-11-09 18:21:54,527 - root - INFO - HTML saved to: output\html\izakaya-hanashobu-hakodate-matsukaze_20251109_182154.html
+2025-11-09 18:21:54,528 - root - INFO - Metadata saved to: output\metadata\izakaya-hanashobu-hakodate-matsukaze_20251109_182154.json
+2025-11-09 18:21:54,528 - wordpress_publisher - INFO - Creating WordPress post: 居酒屋 花笑豊 函館松風町 | 評価3.18の地元居酒屋
+2025-11-09 18:21:54,528 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 18:22:07,110 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 18:22:07,533 - wordpress_publisher - INFO - Created new tag: 居酒屋 (ID: 526)
+2025-11-09 18:22:07,902 - wordpress_publisher - INFO - Created new tag: 松風町 (ID: 527)
+2025-11-09 18:22:08,142 - wordpress_publisher - INFO - Created new tag: 海鮮 (ID: 528)
+2025-11-09 18:22:08,912 - wordpress_publisher - INFO - Post created successfully! ID: 4206, URL: https://umaten.jp/?p=4206
+2025-11-09 18:22:08,912 - root - INFO - Application finished successfully
+2025-11-09 18:27:40,624 - root - INFO - Application started
+2025-11-09 18:27:40,648 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:27:40,648 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:27:45,389 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:27:45,390 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:27:49,152 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:27:49,183 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:27:49,185 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:27:49,186 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:27:49,186 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:27:49,186 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:27:49,186 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:27:49,186 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:27:49,186 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:27:49,186 - scraper - INFO - Found 25 images
+2025-11-09 18:27:49,188 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:27:49,539 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:28:07,356 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:28:07,368 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1106
+2025-11-09 18:28:07,369 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0166, 合計: $0.0176
+2025-11-09 18:28:07,369 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:28:07,370 - article_generator - INFO - Article data generated: 1800 characters
+2025-11-09 18:28:07,371 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 - 湯の川温泉｜函館の本格たこ焼き専門店
+2025-11-09 18:28:07,373 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_182807.html
+2025-11-09 18:28:07,376 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_182807.json
+2025-11-09 18:28:07,377 - root - INFO - Application finished successfully
+2025-11-09 18:28:37,219 - root - INFO - Application started
+2025-11-09 18:28:37,245 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:28:37,246 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:28:41,798 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:28:41,798 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:28:45,180 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:28:45,202 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:28:45,204 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:28:45,204 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:28:45,204 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:28:45,205 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:28:45,205 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:28:45,205 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:28:45,207 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:28:45,207 - scraper - INFO - Found 25 images
+2025-11-09 18:28:45,209 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:28:45,547 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:29:04,356 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:29:04,367 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1140
+2025-11-09 18:29:04,367 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0171, 合計: $0.0181
+2025-11-09 18:29:04,368 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:29:04,368 - article_generator - INFO - Article data generated: 1842 characters
+2025-11-09 18:29:04,369 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 - 湯の川温泉｜函館で人気のたこ焼き専門店
+2025-11-09 18:29:04,369 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen-hakodate_20251109_182904.html
+2025-11-09 18:29:04,371 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen-hakodate_20251109_182904.json
+2025-11-09 18:29:04,372 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 - 湯の川温泉｜函館で人気のたこ焼き専門店
+2025-11-09 18:29:04,372 - wordpress_publisher - INFO - Fetching category ID for slug: japanese-food
+2025-11-09 18:29:04,944 - wordpress_publisher - WARNING - Category not found: japanese-food
+2025-11-09 18:29:06,232 - wordpress_publisher - INFO - Post created successfully! ID: 4209, URL: https://umaten.jp/?p=4209
+2025-11-09 18:29:06,233 - root - INFO - Application finished successfully
+2025-11-09 18:34:51,161 - root - INFO - Application started
+2025-11-09 18:34:51,184 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:34:51,185 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:34:53,477 - root - WARNING - Application interrupted by user
+2025-11-09 18:35:05,981 - root - INFO - Application started
+2025-11-09 18:35:06,004 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:35:06,004 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:35:09,698 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:35:09,698 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:35:15,006 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:35:15,064 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:35:15,068 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:35:15,068 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:35:15,069 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:35:15,069 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:35:15,070 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:35:15,070 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:35:15,070 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:35:15,070 - scraper - INFO - Found 25 images
+2025-11-09 18:35:15,074 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:35:15,387 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:35:33,617 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:35:33,625 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1100
+2025-11-09 18:35:33,625 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0165, 合計: $0.0175
+2025-11-09 18:35:33,625 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:35:33,625 - article_generator - INFO - Article data generated: 1789 characters
+2025-11-09 18:35:33,627 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 | 函館の人気たこ焼き専門店
+2025-11-09 18:35:33,628 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_183533.html
+2025-11-09 18:35:33,630 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_183533.json
+2025-11-09 18:35:33,630 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉店 | 函館の人気たこ焼き専門店
+2025-11-09 18:35:33,630 - wordpress_publisher - INFO - Fetching category ID for slug: other
+2025-11-09 18:35:34,227 - wordpress_publisher - WARNING - Category not found: other
+2025-11-09 18:35:35,450 - wordpress_publisher - INFO - Post created successfully! ID: 4210, URL: https://umaten.jp/?p=4210
+2025-11-09 18:35:35,453 - root - INFO - Application finished successfully
+2025-11-09 18:43:37,962 - root - INFO - Application started
+2025-11-09 18:43:37,985 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:43:37,985 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:43:42,175 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:43:42,176 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:43:46,493 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:43:46,538 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:43:46,539 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:43:46,540 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:43:46,540 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:43:46,540 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:43:46,540 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:43:46,540 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:43:46,540 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:43:46,540 - scraper - INFO - Found 25 images
+2025-11-09 18:43:46,542 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:43:46,836 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:44:04,496 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:44:04,503 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1106
+2025-11-09 18:44:04,504 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0166, 合計: $0.0176
+2025-11-09 18:44:04,504 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:44:04,504 - article_generator - INFO - Article data generated: 1780 characters
+2025-11-09 18:44:04,505 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 | 函館の本格たこ焼き専門店
+2025-11-09 18:44:04,507 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_184404.html
+2025-11-09 18:44:04,509 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_184404.json
+2025-11-09 18:44:04,510 - wordpress_publisher - INFO - Fetching all categories from WordPress...
+2025-11-09 18:44:05,978 - wordpress_publisher - INFO - Retrieved 424 categories
+2025-11-09 18:44:05,979 - wordpress_publisher - INFO - 検出された料理ジャンル: {'たこ焼き'}
+2025-11-09 18:44:05,979 - wordpress_publisher - INFO - 最終的に選択されたカテゴリID: []
+2025-11-09 18:44:05,979 - wordpress_publisher - WARNING - No matching categories found, trying default category
+2025-11-09 18:44:05,979 - wordpress_publisher - INFO - Fetching category ID for slug: uncategorized
+2025-11-09 18:44:06,122 - wordpress_publisher - INFO - Found category ID: 1
+2025-11-09 18:44:06,122 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉店 | 函館の本格たこ焼き専門店
+2025-11-09 18:44:06,124 - wordpress_publisher - INFO - Setting categories: [1]
+2025-11-09 18:44:07,160 - wordpress_publisher - INFO - Post created successfully! ID: 4211, URL: https://umaten.jp/?p=4211
+2025-11-09 18:44:07,162 - root - INFO - Application finished successfully
+2025-11-09 18:48:10,280 - root - INFO - Application started
+2025-11-09 18:48:10,304 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:48:10,304 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:48:15,611 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:48:15,611 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:48:20,692 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:48:20,719 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:48:20,721 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:48:20,721 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:48:20,721 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:48:20,721 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:48:20,721 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:48:20,721 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:48:20,721 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:48:20,721 - scraper - INFO - Found 25 images
+2025-11-09 18:48:20,724 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:48:20,977 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:48:38,705 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:48:38,710 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1098
+2025-11-09 18:48:38,711 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0165, 合計: $0.0175
+2025-11-09 18:48:38,711 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:48:38,711 - article_generator - INFO - Article data generated: 1783 characters
+2025-11-09 18:48:38,712 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 | 函館のこだわりたこ焼き専門店
+2025-11-09 18:48:38,714 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_184838.html
+2025-11-09 18:48:38,715 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_184838.json
+2025-11-09 18:48:38,715 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:48:38,715 - wordpress_publisher - INFO - カテゴリ自動判定開始
+2025-11-09 18:48:38,716 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:48:38,716 - wordpress_publisher - INFO - Fetching all categories from WordPress...
+2025-11-09 18:48:40,099 - wordpress_publisher - INFO - Retrieved 424 categories
+2025-11-09 18:48:40,099 - wordpress_publisher - INFO - WordPress取得カテゴリ数: 424
+2025-11-09 18:48:40,099 - wordpress_publisher - INFO - 取得したカテゴリ一覧:
+2025-11-09 18:48:40,099 - wordpress_publisher - INFO -   - いわき駅周辺 (ID: 345, slug: iwaki-station, parent: 50)
+2025-11-09 18:48:40,099 - wordpress_publisher - INFO -   - すすきの (ID: 6, slug: susukino, parent: 5)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - にかほ市 (ID: 96, slug: nikaho, parent: 64)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - にかほ市中心部 (ID: 97, slug: center, parent: 96)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - ニセコ (ID: 17, slug: niseko, parent: 4)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - むつ市 (ID: 56, slug: mutsu, parent: 34)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - むつ市街 (ID: 57, slug: mutsu-center, parent: 56)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - ラーメン街道 (ID: 364, slug: ramen-kaido, parent: 362)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 一番町 (ID: 202, slug: ichibancho, parent: 199)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 一関市 (ID: 121, slug: ichinoseki, parent: 116)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 一関駅周辺 (ID: 122, slug: ichinoseki-station, parent: 121)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 七ヶ浜町 (ID: 247, slug: shichigahama, parent: 198)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 七日町 (ID: 353, slug: nanokamachi, parent: 351)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 万代 (ID: 266, slug: bandai, parent: 264)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 三島町 (ID: 385, slug: mishima, parent: 332)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 三川町 (ID: 177, slug: mikawa, parent: 174)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 三春町 (ID: 402, slug: miharu, parent: 332)
+2025-11-09 18:48:40,100 - wordpress_publisher - INFO -   - 三条市 (ID: 283, slug: sanjo, parent: 263)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 三種町 (ID: 107, slug: mitane, parent: 64)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 三陸町 (ID: 150, slug: sanriku, parent: 148)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 上小阿仁村 (ID: 114, slug: kamikoani, parent: 64)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 上山市 (ID: 163, slug: kaminoyama, parent: 160)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 上越妙高駅周辺 (ID: 298, slug: joetsumyoko-station, parent: 294)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 上越市 (ID: 294, slug: joetsu, parent: 263)
+2025-11-09 18:48:40,101 - wordpress_publisher - INFO -   - 下郷町 (ID: 390, slug: shimogo, parent: 332)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 両津 (ID: 323, slug: ryotsu, parent: 322)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 中央 (ID: 220, slug: chuo, parent: 217)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 中尊寺周辺 (ID: 135, slug: chusonji, parent: 133)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 中山町 (ID: 168, slug: nakayama, parent: 160)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 中島村 (ID: 406, slug: nakajima, parent: 332)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 丸森町 (ID: 256, slug: marumori, parent: 198)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 久慈市 (ID: 152, slug: kuji, parent: 116)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 亀田 (ID: 271, slug: kameda, parent: 264)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 二ツ井 (ID: 91, slug: futatsui, parent: 90)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 二戸市 (ID: 155, slug: ninohe, parent: 116)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 二本松市 (ID: 367, slug: nihonmatsu, parent: 332)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 二本松駅周辺 (ID: 368, slug: nihonmatsu-station, parent: 367)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 五城目町 (ID: 109, slug: gojome, parent: 64)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 五所川原市 (ID: 60, slug: goshogawara, parent: 34)
+2025-11-09 18:48:40,102 - wordpress_publisher - INFO -   - 五所川原駅前 (ID: 61, slug: goshogawara-station, parent: 60)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 五泉市 (ID: 309, slug: gosen, parent: 263)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 井川町 (ID: 111, slug: ikawa, parent: 64)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 亘理町 (ID: 250, slug: watari, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙北市 (ID: 87, slug: semboku, parent: 64)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市 (ID: 199, slug: sendai, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市太白区 (ID: 214, slug: sendai-taihaku, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市宮城野区 (ID: 213, slug: sendai-miyagino, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市泉区 (ID: 215, slug: sendai-izumi, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市若林区 (ID: 216, slug: sendai-wakabayashi, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台市青葉区 (ID: 212, slug: sendai-aoba, parent: 198)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 仙台駅 (ID: 200, slug: sendai-station, parent: 199)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 伊達市 (ID: 373, slug: date, parent: 332)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 会津坂下町 (ID: 381, slug: aizubange, parent: 332)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 会津田島 (ID: 389, slug: aizu-tajima, parent: 388)
+2025-11-09 18:48:40,104 - wordpress_publisher - INFO -   - 会津美里町 (ID: 382, slug: aizumisato, parent: 332)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 会津若松市 (ID: 351, slug: aizuwakamatsu, parent: 332)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 会津若松駅周辺 (ID: 352, slug: aizuwakamatsu-station, parent: 351)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 佐和田 (ID: 324, slug: sawata, parent: 322)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 佐渡市 (ID: 322, slug: sado, parent: 263)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 余市 (ID: 33, slug: yoichi, parent: 4)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八峰町 (ID: 108, slug: happou, parent: 64)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八幡平市 (ID: 138, slug: hachimantai, parent: 116)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八戸市 (ID: 40, slug: hachinohe, parent: 34)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八戸駅前 (ID: 41, slug: hachinohe-station, parent: 40)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八木山 (ID: 211, slug: yagiyama, parent: 199)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 八郎潟町 (ID: 110, slug: hachirogata, parent: 64)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 六日町 (ID: 314, slug: muikamachi, parent: 313)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 円山 (ID: 9, slug: maruyama, parent: 5)
+2025-11-09 18:48:40,105 - wordpress_publisher - INFO -   - 函館 (ID: 10, slug: hakodate, parent: 4)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 利府町 (ID: 241, slug: rifu, parent: 198)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 前沢 (ID: 126, slug: maesawa, parent: 124)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 加美町 (ID: 261, slug: kami, parent: 198)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 加茂市 (ID: 293, slug: kamo, parent: 263)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 勿来 (ID: 350, slug: nakoso, parent: 50)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北上市 (ID: 131, slug: kitakami, parent: 116)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北上駅周辺 (ID: 132, slug: kitakami-station, parent: 131)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北塩原村 (ID: 379, slug: kitashiobara, parent: 332)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北海道 (ID: 4, slug: hokkaido, parent: 0)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北秋田市 (ID: 99, slug: kitaakita, parent: 64)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 北見 (ID: 22, slug: kitami, parent: 4)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 十和田市 (ID: 52, slug: towada, parent: 34)
+2025-11-09 18:48:40,106 - wordpress_publisher - INFO -   - 十和田市街 (ID: 53, slug: towada-center, parent: 52)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 十和田湖 (ID: 55, slug: lake-towada, parent: 52)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 十文字 (ID: 75, slug: jumonji, parent: 73)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 十日町市 (ID: 290, slug: tokamachi, parent: 263)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 十日町駅周辺 (ID: 291, slug: tokamachi-station, parent: 290)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 千歳 (ID: 25, slug: chitose, parent: 4)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 協和 (ID: 85, slug: kyowa, parent: 83)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南三陸町 (ID: 249, slug: minamisanriku, parent: 198)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南会津町 (ID: 388, slug: minamiaizu, parent: 332)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南町 (ID: 223, slug: minami-machi, parent: 221)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南相馬市 (ID: 370, slug: minamisoma, parent: 332)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南陽市 (ID: 183, slug: nanyo, parent: 180)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 南魚沼市 (ID: 313, slug: minami-uonuma, parent: 263)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 卸町 (ID: 209, slug: oroshimachi, parent: 199)
+2025-11-09 18:48:40,108 - wordpress_publisher - INFO -   - 原町 (ID: 371, slug: haramachi, parent: 370)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 厳美渓 (ID: 123, slug: genbikei, parent: 121)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 双葉町 (ID: 423, slug: futaba, parent: 332)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 古川 (ID: 38, slug: furukawa, parent: 35)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 古川中心部 (ID: 227, slug: furukawa-chuo, parent: 225)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 古川駅周辺 (ID: 226, slug: furukawa-station, parent: 225)
+2025-11-09 18:48:40,109 - wordpress_publisher - INFO -   - 古正寺 (ID: 279, slug: koshoji, parent: 277)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 古殿町 (ID: 401, slug: furudono, parent: 332)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 古町 (ID: 265, slug: furumachi, parent: 264)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 只見町 (ID: 393, slug: tadami, parent: 332)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 合川 (ID: 102, slug: aikawa, parent: 99)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 名取市 (ID: 229, slug: natori, parent: 198)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 名取駅 (ID: 230, slug: natori-station, parent: 229)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 喜多方市 (ID: 362, slug: kitakata, parent: 332)
+2025-11-09 18:48:40,110 - wordpress_publisher - INFO -   - 喜多方駅周辺 (ID: 363, slug: kitakata-station, parent: 362)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 国分町 (ID: 201, slug: kokubuncho, parent: 199)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 国見町 (ID: 413, slug: kunimi, parent: 332)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 土崎 (ID: 69, slug: tsuchizaki, parent: 65)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 土手町 (ID: 48, slug: dotemachi, parent: 46)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 土湯温泉 (ID: 338, slug: tsuchiyu-onsen, parent: 333)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 塙町 (ID: 410, slug: hanawa, parent: 332)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 塩沢 (ID: 315, slug: shiozawa, parent: 313)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 塩竈市 (ID: 238, slug: shiogama, parent: 198)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 増田 (ID: 74, slug: masuda, parent: 73)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 多賀城市 (ID: 237, slug: tagajo, parent: 198)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 大仙市 (ID: 83, slug: daisen, parent: 64)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 大内宿 (ID: 391, slug: ouchi-juku, parent: 390)
+2025-11-09 18:48:40,111 - wordpress_publisher - INFO -   - 大和町 (ID: 258, slug: taiwa, parent: 198)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大学周辺 (ID: 51, slug: university-area, parent: 46)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大崎市 (ID: 225, slug: osaki, parent: 198)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大曲 (ID: 84, slug: omagari, parent: 83)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大槌町 (ID: 154, slug: otsuchi, parent: 116)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大江町 (ID: 172, slug: oe, parent: 160)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大河原町 (ID: 252, slug: ogawara, parent: 198)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大湊 (ID: 59, slug: ominato, parent: 56)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大潟村 (ID: 115, slug: ogata, parent: 64)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大熊町 (ID: 422, slug: okuma, parent: 332)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大玉村 (ID: 415, slug: otama, parent: 332)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大町 (ID: 342, slug: omachi, parent: 339)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大石田町 (ID: 173, slug: oishida, parent: 160)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大船渡市 (ID: 148, slug: ofunato, parent: 116)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大船渡駅周辺 (ID: 149, slug: ofunato-station, parent: 148)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大蔵村 (ID: 195, slug: okura, parent: 189)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大通 (ID: 7, slug: odori, parent: 5)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大郷町 (ID: 259, slug: osato, parent: 198)
+2025-11-09 18:48:40,113 - wordpress_publisher - INFO -   - 大館市 (ID: 76, slug: odate, parent: 64)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 天栄村 (ID: 396, slug: tenei, parent: 332)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 天童市 (ID: 161, slug: tendo, parent: 160)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 奥入瀬 (ID: 54, slug: oirase, parent: 52)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 奥州市 (ID: 124, slug: oshu, parent: 116)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 女川町 (ID: 248, slug: onagawa, parent: 198)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 妙高市 (ID: 301, slug: myoko, parent: 263)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 妙高高原 (ID: 302, slug: myoko-kogen, parent: 301)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 安代 (ID: 139, slug: ashiro, parent: 138)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 安積町 (ID: 343, slug: asaka, parent: 339)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 定山渓 (ID: 30, slug: jozankei, parent: 4)
+2025-11-09 18:48:40,114 - wordpress_publisher - INFO -   - 定禅寺通 (ID: 204, slug: jozenji-dori, parent: 199)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 室蘭 (ID: 27, slug: muroran, parent: 4)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 宮内 (ID: 280, slug: miyauchi, parent: 277)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 宮古市 (ID: 143, slug: miyako, parent: 116)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 宮古駅周辺 (ID: 144, slug: miyako-station, parent: 143)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 宮城県 (ID: 198, slug: miyagi, parent: 0)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 富岡町 (ID: 420, slug: tomioka, parent: 332)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 富田町 (ID: 344, slug: tomita, parent: 339)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 富良野 (ID: 18, slug: furano, parent: 4)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 富谷市 (ID: 239, slug: tomiya, parent: 198)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 寒河江市 (ID: 162, slug: sagae, parent: 160)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 寺泊 (ID: 282, slug: teradomari, parent: 277)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 寿司・和食 (ID: 450, slug: washoku, parent: 0)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 小出 (ID: 318, slug: koide, parent: 317)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 小千谷市 (ID: 289, slug: ojiya, parent: 263)
+2025-11-09 18:48:40,115 - wordpress_publisher - INFO -   - 小名浜 (ID: 347, slug: onahama, parent: 50)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小国町 (ID: 186, slug: oguni, parent: 180)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小岩井 (ID: 142, slug: koiwai, parent: 141)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小木 (ID: 325, slug: ogi, parent: 322)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小樽 (ID: 14, slug: otaru, parent: 4)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小野町 (ID: 403, slug: ono, parent: 332)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 小高 (ID: 372, slug: odaka, parent: 370)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 尾花沢市 (ID: 166, slug: obanazawa, parent: 160)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 居酒屋・バー (ID: 451, slug: izakaya, parent: 0)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 山元町 (ID: 251, slug: yamamoto, parent: 198)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 山形県 (ID: 159, slug: yamagata, parent: 0)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 山王 (ID: 71, slug: sanno, parent: 65)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 山田町 (ID: 153, slug: yamada, parent: 116)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 山辺町 (ID: 167, slug: yamanobe, parent: 160)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 岩室温泉 (ID: 327, slug: iwamuro-onsen, parent: 263)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 岩手県 (ID: 116, slug: iwate, parent: 0)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 岩木 (ID: 50, slug: iwaki, parent: 46)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 岩沼市 (ID: 240, slug: iwanuma, parent: 198)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 岳温泉 (ID: 369, slug: dake-onsen, parent: 367)
+2025-11-09 18:48:40,117 - wordpress_publisher - INFO -   - 川俣町 (ID: 414, slug: kawamata, parent: 332)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 川内村 (ID: 421, slug: kawauchi, parent: 332)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 川反・大町 (ID: 67, slug: kawabata, parent: 65)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 川崎町 (ID: 255, slug: kawasaki, parent: 198)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 川西町 (ID: 185, slug: kawanishi, parent: 180)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 市街地 (ID: 62, slug: city-center, parent: 60)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 帯広 (ID: 20, slug: obihiro, parent: 4)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 平 (ID: 346, slug: taira, parent: 50)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 平泉町 (ID: 133, slug: hiraizumi, parent: 116)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 平泉駅周辺 (ID: 134, slug: hiraizumi-station, parent: 133)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 平田村 (ID: 399, slug: hirata, parent: 332)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 広瀬通 (ID: 203, slug: hirose-dori, parent: 199)
+2025-11-09 18:48:40,118 - wordpress_publisher - INFO -   - 広野町 (ID: 418, slug: hirono, parent: 332)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 広面 (ID: 70, slug: hiromote, parent: 65)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 庄内地域 (ID: 174, slug: shonai, parent: 159)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 庄内町 (ID: 178, slug: shonai-town, parent: 174)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 弘前城周辺 (ID: 49, slug: castle-area, parent: 46)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 弘前市 (ID: 46, slug: hirosaki, parent: 34)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 弘前駅前 (ID: 47, slug: hirosaki-station, parent: 46)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 弥彦 (ID: 326, slug: yahiko, parent: 263)
+2025-11-09 18:48:40,119 - wordpress_publisher - INFO -   - 御所野 (ID: 68, slug: goshono, parent: 65)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 恐山 (ID: 58, slug: osorezan, parent: 56)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 戸沢村 (ID: 197, slug: tozawa, parent: 189)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新地町 (ID: 416, slug: shinchi, parent: 332)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新屋 (ID: 72, slug: araya, parent: 65)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新庄市 (ID: 190, slug: shinjo, parent: 189)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新津 (ID: 273, slug: niitsu, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市 (ID: 264, slug: niigata-city, parent: 263)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市北区 (ID: 275, slug: kita, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市南区 (ID: 274, slug: minami, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市東区 (ID: 269, slug: higashi, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市江南区 (ID: 270, slug: konan, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市秋葉区 (ID: 272, slug: akiha, parent: 264)
+2025-11-09 18:48:40,120 - wordpress_publisher - INFO -   - 新潟市西区 (ID: 268, slug: nishi, parent: 264)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新潟市西蒲区 (ID: 276, slug: nishikan, parent: 264)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新潟県 (ID: 263, slug: niigata, parent: 0)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新潟駅周辺 (ID: 267, slug: niigata-station, parent: 264)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新町 (ID: 37, slug: shinmachi, parent: 35)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新発田駅周辺 (ID: 304, slug: shibata-station, parent: 253)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新白河駅周辺 (ID: 358, slug: shin-shirakawa, parent: 357)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 新花巻駅周辺 (ID: 130, slug: shin-hanamaki, parent: 128)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 旭川 (ID: 16, slug: asahikawa, parent: 4)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 春日山 (ID: 297, slug: kasugayama, parent: 294)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 昭和村 (ID: 386, slug: showa, parent: 332)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 最上地域 (ID: 189, slug: mogami, parent: 159)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 最上町 (ID: 192, slug: mogami-town, parent: 189)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 月岡温泉 (ID: 305, slug: tsukioka-onsen, parent: 253)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 朝日町 (ID: 171, slug: asahi, parent: 160)
+2025-11-09 18:48:40,121 - wordpress_publisher - INFO -   - 未分類 (ID: 1, slug: uncategorized, parent: 0)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 本八戸 (ID: 42, slug: hon-hachinohe, parent: 40)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 本宮市 (ID: 374, slug: motomiya, parent: 332)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 本荘 (ID: 80, slug: honjo, parent: 79)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 札幌 (ID: 5, slug: sapporo, parent: 4)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 札幌駅 (ID: 8, slug: sapporo-station, parent: 5)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 村上市 (ID: 306, slug: murakami, parent: 263)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 村上駅周辺 (ID: 307, slug: murakami-station, parent: 306)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 村山地域 (ID: 160, slug: murayama, parent: 159)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 村山市 (ID: 165, slug: murayama-city, parent: 160)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 村田町 (ID: 257, slug: murata, parent: 198)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 杜せきのした (ID: 231, slug: morisekinoshita, parent: 229)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 東三条駅周辺 (ID: 284, slug: higashi-sanjo, parent: 283)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 東山温泉 (ID: 355, slug: higashiyama-onsen, parent: 351)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 東成瀬村 (ID: 113, slug: higashinaruse, parent: 64)
+2025-11-09 18:48:40,122 - wordpress_publisher - INFO -   - 東松島市 (ID: 244, slug: higashimatsushima, parent: 198)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 東根市 (ID: 164, slug: higashine, parent: 160)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 松島海岸 (ID: 235, slug: matsushima-kaigan, parent: 234)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 松島町 (ID: 234, slug: matsushima, parent: 198)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 松島駅 (ID: 236, slug: matsushima-station, parent: 234)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 柏崎市 (ID: 287, slug: kashiwazaki, parent: 263)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 柏崎駅周辺 (ID: 288, slug: kashiwazaki-station, parent: 287)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 柳津町 (ID: 384, slug: yanaizu, parent: 332)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 柴田町 (ID: 253, slug: shibata, parent: 198)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 栃尾 (ID: 281, slug: tochio, parent: 277)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 栄町 (ID: 336, slug: sakaemachi, parent: 333)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 栗原市 (ID: 242, slug: kurihara, parent: 198)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 根室 (ID: 32, slug: nemuro, parent: 4)
+2025-11-09 18:48:40,124 - wordpress_publisher - INFO -   - 桑折町 (ID: 412, slug: koori, parent: 332)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 棚倉町 (ID: 408, slug: tanagura, parent: 332)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 森吉 (ID: 101, slug: moriyoshi, parent: 99)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 植田 (ID: 349, slug: ueda, parent: 50)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 楢葉町 (ID: 419, slug: naraha, parent: 332)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 横手市 (ID: 73, slug: yokote, parent: 64)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 檜枝岐村 (ID: 394, slug: hinoemata, parent: 332)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 比内 (ID: 77, slug: hinai, parent: 76)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 気仙沼市 (ID: 221, slug: kesennuma, parent: 198)
+2025-11-09 18:48:40,125 - wordpress_publisher - INFO -   - 気仙沼駅周辺 (ID: 222, slug: kesennuma-station, parent: 221)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 水沢 (ID: 125, slug: mizusawa, parent: 124)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 江刺 (ID: 127, slug: esashi, parent: 124)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 河北町 (ID: 169, slug: kahoku, parent: 160)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 泉中央 (ID: 207, slug: izumi-chuo, parent: 199)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 泉崎村 (ID: 405, slug: izumizaki, parent: 332)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 洋食・レストラン (ID: 452, slug: western-food, parent: 0)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 洞爺湖 (ID: 29, slug: toyako, parent: 4)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 津南町 (ID: 321, slug: tsunan, parent: 263)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 浄土ヶ浜 (ID: 145, slug: jodogahama, parent: 143)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 浅川町 (ID: 400, slug: asakawa, parent: 332)
+2025-11-09 18:48:40,126 - wordpress_publisher - INFO -   - 浦佐 (ID: 316, slug: urasa, parent: 313)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 浪岡 (ID: 39, slug: namiyoka, parent: 35)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 浪江町 (ID: 424, slug: namie, parent: 332)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 涌谷町 (ID: 260, slug: wakuya, parent: 198)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 湊 (ID: 43, slug: minato, parent: 40)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 湯川村 (ID: 387, slug: yugawa, parent: 332)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 湯本 (ID: 348, slug: yumoto, parent: 50)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 湯沢市 (ID: 92, slug: yuzawa, parent: 64)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 湯野上温泉 (ID: 392, slug: yunokami-onsen, parent: 390)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 滝沢市 (ID: 156, slug: takizawa, parent: 116)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 潟上市 (ID: 103, slug: katagami, parent: 64)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 瀬波温泉 (ID: 308, slug: senami-onsen, parent: 306)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 焼肉・ステーキ (ID: 453, slug: yakiniku, parent: 0)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 焼鳥・串 (ID: 454, slug: yakitori, parent: 0)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 燕三条 (ID: 286, slug: tsubame-sanjo, parent: 285)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 燕市 (ID: 285, slug: tsubame, parent: 263)
+2025-11-09 18:48:40,127 - wordpress_publisher - INFO -   - 猪苗代湖畔 (ID: 378, slug: inawashiroko, parent: 376)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 猪苗代町 (ID: 376, slug: inawashiro, parent: 332)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 猪苗代駅周辺 (ID: 377, slug: inawashiro-station, parent: 376)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 玉川村 (ID: 398, slug: tamakawa, parent: 332)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 田上町 (ID: 329, slug: tagami, parent: 263)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 田中前 (ID: 224, slug: tanaka-mae, parent: 221)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 田代 (ID: 78, slug: tashiro, parent: 76)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 田村市 (ID: 375, slug: tamura, parent: 332)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 田沢湖 (ID: 89, slug: tazawako, parent: 87)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 由利本荘市 (ID: 79, slug: yurihonjo, parent: 64)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 男鹿市 (ID: 94, slug: oga, parent: 64)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 男鹿温泉郷 (ID: 95, slug: onsen, parent: 94)
+2025-11-09 18:48:40,129 - wordpress_publisher - INFO -   - 登別温泉 (ID: 28, slug: noboribetsu, parent: 4)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 登米市 (ID: 243, slug: tome, parent: 198)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 白河市 (ID: 357, slug: shirakawa, parent: 332)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 白河駅周辺 (ID: 359, slug: shirakawa-station, parent: 357)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 白石市 (ID: 245, slug: shiroishi, parent: 198)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 白鷹町 (ID: 187, slug: shirataka, parent: 180)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 盛岡市 (ID: 117, slug: morioka, parent: 116)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 盛岡駅周辺 (ID: 118, slug: morioka-station, parent: 117)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 盛岡駅西口 (ID: 120, slug: moriokaeki-nishi, parent: 117)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 直江津 (ID: 296, slug: naoetsu, parent: 294)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 相馬市 (ID: 365, slug: soma, parent: 332)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 相馬駅周辺 (ID: 366, slug: soma-station, parent: 365)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 真室川町 (ID: 194, slug: mamurogawa, parent: 189)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 矢吹町 (ID: 407, slug: yabuki, parent: 332)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 矢島 (ID: 82, slug: yashima, parent: 79)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 矢巾町 (ID: 157, slug: yahaba, parent: 116)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 矢祭町 (ID: 409, slug: yamatsuri, parent: 332)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 知床 (ID: 31, slug: shiretoko, parent: 4)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 石川町 (ID: 397, slug: ishikawa, parent: 332)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 石巻市 (ID: 217, slug: ishinomaki, parent: 198)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 石巻駅周辺 (ID: 218, slug: ishinomaki-station, parent: 217)
+2025-11-09 18:48:40,130 - wordpress_publisher - INFO -   - 福島市 (ID: 333, slug: fukushima-shi, parent: 332)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 福島県 (ID: 332, slug: fukushima, parent: 0)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 福島駅周辺 (ID: 334, slug: fukushima-station, parent: 333)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 福島駅東口 (ID: 335, slug: fukushima-higashi, parent: 333)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 秋田市 (ID: 65, slug: akita-city, parent: 64)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 秋田県 (ID: 64, slug: akita, parent: 0)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 秋田駅周辺 (ID: 66, slug: station, parent: 65)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 稚内 (ID: 24, slug: wakkanai, parent: 4)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 種差海岸 (ID: 45, slug: tanesashi, parent: 40)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 稲川 (ID: 93, slug: inakawa, parent: 92)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 米沢市 (ID: 181, slug: yonezawa, parent: 180)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 粟島浦村 (ID: 331, slug: awashimaura, parent: 263)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 糸魚川市 (ID: 299, slug: itoigawa, parent: 263)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 糸魚川駅周辺 (ID: 300, slug: itoigawa-station, parent: 299)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 紫波町 (ID: 158, slug: shiwa, parent: 116)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 網走 (ID: 23, slug: abashiri, parent: 4)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 置賜地域 (ID: 180, slug: okitama, parent: 159)
+2025-11-09 18:48:40,131 - wordpress_publisher - INFO -   - 美瑛 (ID: 19, slug: biei, parent: 4)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 美田園 (ID: 233, slug: mitazono, parent: 229)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 美郷町 (ID: 105, slug: misato, parent: 64)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 羽後町 (ID: 106, slug: ugo, parent: 64)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 聖籠町 (ID: 328, slug: seiro, parent: 263)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 胎内市 (ID: 311, slug: tainai, parent: 263)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 能代市 (ID: 90, slug: noshiro, parent: 64)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 舟形町 (ID: 193, slug: funagata, parent: 189)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 色麻町 (ID: 262, slug: shikama, parent: 198)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 芦ノ牧温泉 (ID: 356, slug: ashinomaki-onsen, parent: 351)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 花巻市 (ID: 128, slug: hanamaki, parent: 116)
+2025-11-09 18:48:40,133 - wordpress_publisher - INFO -   - 花巻温泉 (ID: 129, slug: hanamaki-onsen, parent: 128)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 苗場 (ID: 320, slug: naeba, parent: 92)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 苫小牧 (ID: 26, slug: tomakomai, parent: 4)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 荒井 (ID: 210, slug: arai, parent: 199)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 荒町 (ID: 208, slug: aramachi, parent: 199)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 菜園 (ID: 119, slug: saien, parent: 117)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 葛尾村 (ID: 425, slug: katsurao, parent: 332)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 蔵王町 (ID: 254, slug: zao, parent: 198)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 藤里町 (ID: 112, slug: fujisato, parent: 64)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 蛇田 (ID: 219, slug: hebita, parent: 217)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 裏磐梯 (ID: 380, slug: urabandai, parent: 379)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 西仙北 (ID: 86, slug: nishisenboku, parent: 83)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 西会津町 (ID: 383, slug: nishiaizu, parent: 332)
+2025-11-09 18:48:40,134 - wordpress_publisher - INFO -   - 西川町 (ID: 170, slug: nishikawa, parent: 160)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 西根 (ID: 140, slug: nishine, parent: 138)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 西目 (ID: 81, slug: nishime, parent: 79)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 西郷村 (ID: 404, slug: nishigo, parent: 332)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 見附市 (ID: 292, slug: mitsuke, parent: 263)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 角田市 (ID: 246, slug: kakuda, parent: 198)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 角館 (ID: 88, slug: kakunodate, parent: 87)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 象潟 (ID: 98, slug: kisakata, parent: 96)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 赤倉温泉 (ID: 303, slug: akakura-onsen, parent: 301)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 越後湯沢 (ID: 319, slug: echigo-yuzawa, parent: 92)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 遊佐町 (ID: 179, slug: yuza, parent: 174)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 遠野市 (ID: 136, slug: tono, parent: 116)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 遠野駅周辺 (ID: 137, slug: tono-station, parent: 136)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 郡山市 (ID: 339, slug: koriyama, parent: 332)
+2025-11-09 18:48:40,135 - wordpress_publisher - INFO -   - 郡山駅周辺 (ID: 340, slug: koriyama-station, parent: 339)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 郡山駅西口 (ID: 341, slug: koriyama-nishi, parent: 339)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 酒田市 (ID: 176, slug: sakata, parent: 174)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 金山町 (ID: 191, slug: kaneyama, parent: 189)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 金木 (ID: 63, slug: kanagi, parent: 60)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 釜石市 (ID: 146, slug: kamaishi, parent: 116)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 釜石駅周辺 (ID: 147, slug: kamaishi-station, parent: 146)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 釧路 (ID: 21, slug: kushiro, parent: 4)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 鏡石町 (ID: 395, slug: kagamiishi, parent: 332)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 長井市 (ID: 182, slug: nagai, parent: 180)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 長岡市 (ID: 277, slug: nagaoka, parent: 263)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 長岡駅周辺 (ID: 278, slug: nagaoka-station, parent: 277)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 長町 (ID: 205, slug: nagamachi, parent: 199)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 長町南 (ID: 206, slug: nagamachi-minami, parent: 199)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 閖上 (ID: 232, slug: yuriage, parent: 229)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 関川村 (ID: 330, slug: sekikawa, parent: 263)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 阿賀町 (ID: 312, slug: aga, parent: 263)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 阿賀野市 (ID: 310, slug: agano, parent: 263)
+2025-11-09 18:48:40,136 - wordpress_publisher - INFO -   - 陸前高田市 (ID: 151, slug: rikuzentakata, parent: 116)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 雫石町 (ID: 141, slug: shizukuishi, parent: 116)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 青森市 (ID: 35, slug: aomori-city, parent: 34)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 青森県 (ID: 34, slug: aomori, parent: 0)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 青森駅前 (ID: 36, slug: aomori-station, parent: 35)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 須賀川市 (ID: 360, slug: sukagawa, parent: 332)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 須賀川駅周辺 (ID: 361, slug: sukagawa-station, parent: 360)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 飯坂温泉 (ID: 337, slug: iizaka-onsen, parent: 333)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 飯舘村 (ID: 417, slug: iitate, parent: 332)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 飯豊町 (ID: 188, slug: iide, parent: 180)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 高田 (ID: 295, slug: takada, parent: 294)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 高畠町 (ID: 184, slug: takahata, parent: 180)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 魚沼市 (ID: 317, slug: uonuma, parent: 263)
+2025-11-09 18:48:40,137 - wordpress_publisher - INFO -   - 鮫 (ID: 44, slug: same, parent: 40)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鮫川村 (ID: 411, slug: samegawa, parent: 332)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鮭川村 (ID: 196, slug: sakegawa, parent: 189)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鳴子温泉 (ID: 228, slug: naruko-onsen, parent: 225)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鶴ヶ城周辺 (ID: 354, slug: tsurugajo, parent: 351)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鶴岡市 (ID: 175, slug: tsuruoka, parent: 174)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鷹巣 (ID: 100, slug: takanosu, parent: 99)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 鹿角市 (ID: 104, slug: kazuno, parent: 64)
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO - 店舗データ:
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 店名: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - 住所: 北海道函館市湯川町1-26-12
+2025-11-09 18:48:40,138 - wordpress_publisher - INFO -   - エリア: 
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -   - カテゴリキーワード: []
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -   - 説明: なし
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 地域検索開始...
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -   都市「函館」を検出
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -     → カテゴリ名「函館」に都市名が含まれる
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -     × 「北海道」が含まれないためスキップ
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 料理ジャンル検索テキスト: たこ焼き 菜々 - 湯の川温泉（たこ焼き） 
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO -   キーワード「たこ焼き」を検出 → ジャンル「たこ焼き」
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 検出された料理ジャンル: {'たこ焼き'}
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 料理カテゴリ検索開始...
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 地域カテゴリマッチ数: 0
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - 料理カテゴリマッチ数: 0
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:48:40,139 - wordpress_publisher - WARNING - ✗ カテゴリが1つも選択されませんでした
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:48:40,139 - wordpress_publisher - WARNING - No matching categories found, trying default category
+2025-11-09 18:48:40,139 - wordpress_publisher - INFO - Fetching category ID for slug: uncategorized
+2025-11-09 18:48:40,289 - wordpress_publisher - INFO - Found category ID: 1
+2025-11-09 18:48:40,290 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉店 | 函館のこだわりたこ焼き専門店
+2025-11-09 18:48:40,291 - wordpress_publisher - INFO - Setting categories: [1]
+2025-11-09 18:48:41,350 - wordpress_publisher - INFO - Post created successfully! ID: 4212, URL: https://umaten.jp/?p=4212
+2025-11-09 18:48:41,353 - root - INFO - Application finished successfully
+2025-11-09 18:52:42,981 - root - INFO - Application started
+2025-11-09 18:52:43,006 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:52:43,006 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:52:47,860 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:52:47,860 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:52:51,644 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:52:51,694 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:52:51,697 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:52:51,697 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:52:51,697 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:52:51,697 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:52:51,698 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:52:51,698 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:52:51,698 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:52:51,698 - scraper - INFO - Found 25 images
+2025-11-09 18:52:51,700 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:52:51,972 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:53:09,576 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:53:09,583 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1120
+2025-11-09 18:53:09,584 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0168, 合計: $0.0178
+2025-11-09 18:53:09,584 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:53:09,584 - article_generator - INFO - Article data generated: 1808 characters
+2025-11-09 18:53:09,585 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 - 湯の川温泉｜函館の人気たこ焼き店
+2025-11-09 18:53:09,587 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen_20251109_185309.html
+2025-11-09 18:53:09,588 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen_20251109_185309.json
+2025-11-09 18:53:09,589 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:53:09,589 - wordpress_publisher - INFO - カテゴリ自動判定開始
+2025-11-09 18:53:09,590 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:53:09,590 - wordpress_publisher - INFO - Fetching all categories from WordPress...
+2025-11-09 18:53:11,065 - wordpress_publisher - INFO - Retrieved 424 categories
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO - WordPress取得カテゴリ数: 424
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO - 店舗データ:
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   - 店名: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   - 住所: 北海道函館市湯川町1-26-12
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   - エリア: 
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   - カテゴリキーワード: []
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   - 説明: なし
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO - 地域検索開始...
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO - 北海道カテゴリID: 4
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   都市「函館」を検出
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -     → カテゴリ名「函館」に都市名が含まれる (parent: 4)
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -     ✓ 地域カテゴリ候補: 函館 (ID: 10, parent: 4)
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO - 料理ジャンル検索テキスト: たこ焼き 菜々 - 湯の川温泉（たこ焼き） 
+2025-11-09 18:53:11,066 - wordpress_publisher - INFO -   キーワード「たこ焼き」を検出 → カテゴリslug「washoku」
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - 検出されたカテゴリslug: {'washoku'}
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - 料理カテゴリ検索開始...
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO -   ✓ 料理カテゴリ候補: 寿司・和食 (ID: 450, slug: washoku)
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - 地域カテゴリマッチ数: 1
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - カテゴリ追加: 函館 (ID: 10)
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - カテゴリ追加: 北海道 (ID: 4)
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - 料理カテゴリマッチ数: 1
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - カテゴリ追加: 寿司・和食 (ID: 450)
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - ✓ 最終的に選択されたカテゴリID: [10, 4, 450]
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - ✓ カテゴリ名: ['函館', '北海道', '寿司・和食']
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 - 湯の川温泉｜函館の人気たこ焼き店
+2025-11-09 18:53:11,067 - wordpress_publisher - INFO - Setting categories: [10, 4, 450]
+2025-11-09 18:53:12,098 - wordpress_publisher - INFO - Post created successfully! ID: 4217, URL: https://umaten.jp/?p=4217
+2025-11-09 18:53:12,100 - root - INFO - Application finished successfully
+2025-11-09 18:54:03,514 - root - INFO - Application started
+2025-11-09 18:54:03,538 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:54:03,538 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:54:09,452 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:54:09,452 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:54:14,380 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:54:14,407 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:54:14,409 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:54:14,409 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:54:14,409 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:54:14,409 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:54:14,409 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:54:14,411 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:54:14,411 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:54:14,411 - scraper - INFO - Found 25 images
+2025-11-09 18:54:14,413 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:54:14,680 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:54:33,097 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:54:33,118 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1137
+2025-11-09 18:54:33,119 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0171, 合計: $0.0180
+2025-11-09 18:54:33,120 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:54:33,121 - article_generator - INFO - Article data generated: 1830 characters
+2025-11-09 18:54:33,123 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 | 函館の人気たこ焼き専門店
+2025-11-09 18:54:33,126 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen-hakodate_20251109_185433.html
+2025-11-09 18:54:33,128 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen-hakodate_20251109_185433.json
+2025-11-09 18:54:33,128 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:54:33,129 - wordpress_publisher - INFO - カテゴリ自動判定開始
+2025-11-09 18:54:33,129 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:54:33,129 - wordpress_publisher - INFO - Fetching all categories from WordPress...
+2025-11-09 18:54:34,512 - wordpress_publisher - INFO - Retrieved 424 categories
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO - WordPress取得カテゴリ数: 424
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO - 店舗データ:
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO -   - 店名: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO -   - 住所: 北海道函館市湯川町1-26-12
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO -   - エリア: 
+2025-11-09 18:54:34,513 - wordpress_publisher - INFO -   - カテゴリキーワード: []
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO -   - 説明: なし
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO - 地域検索開始...
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO - 北海道カテゴリID: 4
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO -   都市「函館」を検出
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO -     → カテゴリ名「函館」に都市名が含まれる (parent: 4)
+2025-11-09 18:54:34,514 - wordpress_publisher - INFO -     ✓ 地域カテゴリ候補: 函館 (ID: 10, parent: 4)
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - 料理ジャンル検索テキスト: たこ焼き 菜々 - 湯の川温泉（たこ焼き） 
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO -   キーワード「たこ焼き」を検出 → カテゴリslug「washoku」
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - 検出されたカテゴリslug: {'washoku'}
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - 料理カテゴリ検索開始...
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO -   ✓ 料理カテゴリ候補: 寿司・和食 (ID: 450, slug: washoku)
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - 地域カテゴリマッチ数: 1
+2025-11-09 18:54:34,515 - wordpress_publisher - INFO - カテゴリ追加: 函館 (ID: 10)
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - カテゴリ追加: 北海道 (ID: 4)
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - 料理カテゴリマッチ数: 1
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - カテゴリ追加: 寿司・和食 (ID: 450)
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - ✓ 最終的に選択されたカテゴリID: [10, 4, 450]
+2025-11-09 18:54:34,517 - wordpress_publisher - INFO - ✓ カテゴリ名: ['函館', '北海道', '寿司・和食']
+2025-11-09 18:54:34,518 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:54:34,518 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉店 | 函館の人気たこ焼き専門店
+2025-11-09 18:54:34,518 - wordpress_publisher - INFO - Setting categories: [10, 4, 450]
+2025-11-09 18:54:35,579 - wordpress_publisher - INFO - Post created successfully! ID: 4218, URL: https://umaten.jp/?p=4218
+2025-11-09 18:54:35,586 - root - INFO - Application finished successfully
+2025-11-09 18:58:25,260 - root - INFO - Application started
+2025-11-09 18:58:25,282 - scraper - INFO - Scraping Tabelog: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:58:25,283 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/
+2025-11-09 18:58:30,533 - scraper - INFO - Scraping photos from: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:58:30,533 - scraper - INFO - Fetching: https://tabelog.com/hokkaido/A0105/A010501/1060620/dtlphotolst/smp2/
+2025-11-09 18:58:33,460 - scraper - INFO - DEBUG: Saved photo page HTML to: C:\Users\user\umaten\logs\photo_page_debug.html
+2025-11-09 18:58:33,485 - scraper - INFO - Method 1: Extracting image URLs from <a> tag href attributes
+2025-11-09 18:58:33,487 - scraper - INFO - Found 218 <a> tags on page
+2025-11-09 18:58:33,487 - scraper - INFO -   ✓ Image 1: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_d8e26fc4689acfc...
+2025-11-09 18:58:33,487 - scraper - INFO -   ✓ Image 2: https://tblg.k-img.com/restaurant/images/Rvw/186195/640x640_rect_7fc76ca1e00b2d7...
+2025-11-09 18:58:33,487 - scraper - INFO -   ✓ Image 3: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302401.jpg...
+2025-11-09 18:58:33,488 - scraper - INFO -   ✓ Image 4: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302402.jpg...
+2025-11-09 18:58:33,488 - scraper - INFO -   ✓ Image 5: https://tblg.k-img.com/restaurant/images/Rvw/161302/640x640_rect_161302403.jpg...
+2025-11-09 18:58:33,488 - scraper - INFO - Method 1 result: Found 25 images from <a> tags
+2025-11-09 18:58:33,488 - scraper - INFO - Found 25 images
+2025-11-09 18:58:33,490 - scraper - INFO - Scraped data: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:58:33,723 - article_generator - INFO - Generating article for: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:58:52,296 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-11-09 18:58:52,302 - article_generator - INFO - トークン使用量 - Input: 330, Output: 1125
+2025-11-09 18:58:52,302 - article_generator - INFO - API費用 - Input: $0.0010, Output: $0.0169, 合計: $0.0179
+2025-11-09 18:58:52,303 - article_generator - INFO - Claude API stop_reason: end_turn
+2025-11-09 18:58:52,303 - article_generator - INFO - Article data generated: 1823 characters
+2025-11-09 18:58:52,303 - article_generator - INFO - Article generated successfully: たこ焼き 菜々 湯の川温泉店 - 函館の人気たこ焼き専門店 | 口コミ・メニュー
+2025-11-09 18:58:52,306 - root - INFO - HTML saved to: output\html\takoyaki-nana-yunokawa-onsen-hakodate_20251109_185852.html
+2025-11-09 18:58:52,309 - root - INFO - Metadata saved to: output\metadata\takoyaki-nana-yunokawa-onsen-hakodate_20251109_185852.json
+2025-11-09 18:58:52,309 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:58:52,309 - wordpress_publisher - INFO - カテゴリ自動判定開始
+2025-11-09 18:58:52,309 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:58:52,310 - wordpress_publisher - INFO - Fetching all categories from WordPress...
+2025-11-09 18:58:53,516 - wordpress_publisher - INFO - Retrieved 424 categories
+2025-11-09 18:58:53,516 - wordpress_publisher - INFO - WordPress取得カテゴリ数: 424
+2025-11-09 18:58:53,516 - wordpress_publisher - INFO - 店舗データ:
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   - 店名: たこ焼き 菜々 - 湯の川温泉（たこ焼き）
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   - 住所: 北海道函館市湯川町1-26-12
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   - エリア: 
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   - カテゴリキーワード: []
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   - 説明: なし
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO - 地域検索開始...
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   住所から都道府県「北海道」を検出
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   ✓ 都道府県カテゴリ: 北海道 (ID: 4, slug: hokkaido)
+2025-11-09 18:58:53,517 - wordpress_publisher - INFO -   住所から市区町村候補を抽出: ['北海道函館市', '湯川町']
+2025-11-09 18:58:53,518 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:58:53,518 - wordpress_publisher - INFO - 地域カテゴリマッチ数: 0
+2025-11-09 18:58:53,518 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:58:53,518 - wordpress_publisher - WARNING - ✗ カテゴリが1つも選択されませんでした
+2025-11-09 18:58:53,518 - wordpress_publisher - INFO - ============================================================
+2025-11-09 18:58:53,518 - wordpress_publisher - WARNING - No matching categories found, trying default category
+2025-11-09 18:58:53,519 - wordpress_publisher - INFO - Fetching category ID for slug: uncategorized
+2025-11-09 18:58:53,647 - wordpress_publisher - INFO - Found category ID: 1
+2025-11-09 18:58:53,647 - wordpress_publisher - INFO - Creating WordPress post: たこ焼き 菜々 湯の川温泉店 - 函館の人気たこ焼き専門店 | 口コミ・メニュー
+2025-11-09 18:58:53,647 - wordpress_publisher - INFO - Setting categories: [1]
+2025-11-09 18:58:54,439 - wordpress_publisher - INFO - Created new tag: 温泉街 (ID: 529)
+2025-11-09 18:58:54,940 - wordpress_publisher - INFO - Post created successfully! ID: 4221, URL: https://umaten.jp/?p=4221
+2025-11-09 18:58:54,944 - root - INFO - Application finished successfully

@@ -1,0 +1,6 @@
+# Web UI 用の追加パッケージ
+Flask==3.0.0
+flask-socketio==5.3.5
+python-socketio==5.10.0
+psutil==5.9.6
+eventlet==0.33.3

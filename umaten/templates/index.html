@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウマ店 WordPress自動投稿システム</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍴 ウマ店 WordPress自動投稿システム</h1>
+            <p>食べログURL → Claude AI → WordPress 自動投稿</p>
+        </header>
+
+        <!-- システムモニター -->
+        <div class="monitor-panel">
+            <h2>📊 システムモニター</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">CPU使用率</div>
+                    <div class="stat-value" id="cpu-usage">0%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">メモリ使用率</div>
+                    <div class="stat-value" id="memory-usage">0%</div>
+                    <div class="stat-detail" id="memory-detail">0 GB / 0 GB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">処理待ち</div>
+                    <div class="stat-value" id="queue-length">0件</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">処理中</div>
+                    <div class="stat-value" id="processing-status">0/3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- トークン使用量 -->
+        <div class="monitor-panel">
+            <h2>🎯 トークン使用量 & API費用</h2>
+            <div class="token-grid">
+                <div class="token-card">
+                    <div class="token-label">分間</div>
+                    <div class="token-value" id="token-minute-count">0記事</div>
+                    <div class="token-detail" id="token-minute-tokens">In: 0 / Out: 0</div>
+                    <div class="token-cost" id="token-minute-cost">$0.0000</div>
+                </div>
+                <div class="token-card">
+                    <div class="token-label">時間</div>
+                    <div class="token-value" id="token-hour-count">0記事</div>
+                    <div class="token-detail" id="token-hour-tokens">In: 0 / Out: 0</div>
+                    <div class="token-cost" id="token-hour-cost">$0.0000</div>
+                </div>
+                <div class="token-card">
+                    <div class="token-label">日間</div>
+                    <div class="token-value" id="token-day-count">0記事</div>
+                    <div class="token-detail" id="token-day-tokens">In: 0 / Out: 0</div>
+                    <div class="token-cost" id="token-day-cost">$0.0000</div>
+                </div>
+                <div class="token-card highlight">
+                    <div class="token-label">総合</div>
+                    <div class="token-value" id="token-total-count">0記事</div>
+                    <div class="token-detail" id="token-total-tokens">In: 0 / Out: 0</div>
+                    <div class="token-cost" id="token-total-cost">$0.0000</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 設定パネル -->
+        <div class="settings-panel">
+            <h2>⚙️ 設定</h2>
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label for="articles-per-hour">時産量（記事/時間）:</label>
+                    <input type="number" id="articles-per-hour" min="1" max="100" value="10">
+                    <span class="setting-help">1時間あたりの記事生成数</span>
+                </div>
+                <div class="setting-item">
+                    <label for="concurrent-jobs">同時並行処理数:</label>
+                    <input type="number" id="concurrent-jobs" min="1" max="10" value="3">
+                    <span class="setting-help">同時に処理する記事数（推奨: 3-5）</span>
+                </div>
+                <div class="setting-item">
+                    <label for="auto-publish">
+                        <input type="checkbox" id="auto-publish">
+                        自動公開（チェックなし=下書き保存）
+                    </label>
+                </div>
+                <button onclick="saveSettings()" class="btn btn-secondary">設定を保存</button>
+            </div>
+        </div>
+
+        <!-- カテゴリ選択 -->
+        <div class="category-panel">
+            <h2>📁 カテゴリ選択</h2>
+            <div class="category-mode">
+                <label>
+                    <input type="radio" name="category-mode" value="auto" checked onchange="toggleCategoryMode()">
+                    自動判定
+                </label>
+                <label>
+                    <input type="radio" name="category-mode" value="manual" onchange="toggleCategoryMode()">
+                    手動選択
+                </label>
+            </div>
+            <div id="category-selection" style="display: none;">
+                <div class="category-tree" id="category-tree">
+                    <p>カテゴリを読み込み中...</p>
+                </div>
+                <div class="selected-categories">
+                    <strong>選択中:</strong>
+                    <span id="selected-categories">なし</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- URL入力 -->
+        <div class="url-panel">
+            <h2>🔗 食べログURL入力</h2>
+            <div id="url-inputs">
+                <div class="url-input-row" data-url-index="0">
+                    <input type="text" class="url-input" placeholder="https://tabelog.com/...">
+                    <button onclick="openCategoryModal(this)" class="btn btn-category" title="このURLのカテゴリを設定">📁</button>
+                    <button onclick="removeUrlInput(this)" class="btn btn-remove" style="display: none;">削除</button>
+                    <span class="url-category-label"></span>
+                </div>
+            </div>
+            <button onclick="addUrlInput()" class="btn btn-secondary">+ URL欄を追加</button>
+
+            <!-- リストページの全ページ処理オプション -->
+            <div class="pagination-option">
+                <label>
+                    <input type="checkbox" id="include-all-pages" checked>
+                    <span>リストページ（/rstLst/）の場合、最終ページまで自動追加</span>
+                </label>
+            </div>
+
+            <button onclick="submitJobs()" class="btn btn-primary">🚀 記事生成開始</button>
+        </div>
+
+        <!-- カテゴリ選択モーダル -->
+        <div id="category-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>📁 カテゴリ選択</h3>
+                    <button onclick="closeCategoryModal()" class="btn-close">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="category-tree-modal" id="category-tree-modal">
+                        <p>カテゴリを読み込み中...</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button onclick="clearUrlCategories()" class="btn btn-secondary">カテゴリをクリア</button>
+                    <button onclick="closeCategoryModal()" class="btn btn-primary">完了</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ジョブ一覧 -->
+        <div class="jobs-panel">
+            <h2>📋 処理状況</h2>
+            <div id="jobs-list">
+                <p class="empty-message">まだジョブがありません</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+# ウマ店 WordPress自動投稿システム - 設定ファイル
+
+# WordPress設定
+wordpress:
+  url: "https://umaten.jp"  # WordPressサイトのURL
+  username: "your_username"  # WordPress管理者ユーザー名
+  password: "your_password"  # WordPressパスワード
+  # または Application Password を使用（推奨）
+  app_password: "xxxx xxxx xxxx xxxx xxxx xxxx"  # WordPress Application Password
+
+  # Basic認証設定（サイトにBasic認証がかかっている場合）
+  basic_auth:
+    enabled: false  # Basic認証を使用する場合はtrue
+    username: "basic_auth_user"  # Basic認証のユーザー名
+    password: "basic_auth_pass"  # Basic認証のパスワード
+
+# Claude API設定
+claude:
+  api_key: "sk-ant-xxxxx"  # Anthropic Claude API Key
+  model: "claude-haiku-4-5-20251001"  # 使用するモデル
+  max_tokens: 8000  # 最大トークン数
+  temperature: 0.7  # 温度パラメータ
+
+# スクレイピング設定
+scraping:
+  # User-Agentのリスト（ランダムに使用）
+  user_agents:
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    - "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
+    - "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+  # リクエスト間の遅延（秒）
+  min_delay: 2
+  max_delay: 5
+
+  # リトライ設定
+  max_retries: 3
+  retry_delay: 5
+
+  # タイムアウト設定（秒）
+  timeout: 30
+
+  # Selenium設定（動的コンテンツ用）
+  use_selenium: false  # Seleniumを使用する場合はtrue
+  headless: true  # ヘッドレスモード
+
+  # プロキシ設定（オプション）
+  use_proxy: false
+  proxies:
+    - "http://proxy1.example.com:8080"
+    - "http://proxy2.example.com:8080"
+
+# カテゴリマッピング（食べログのカテゴリ → WordPressカテゴリ）
+category_mapping:
+  "イタリアン": "italian"
+  "フレンチ": "italian"
+  "うどん": "udon"
+  "そば": "udon"
+  "カフェ": "cafe"
+  "スイーツ": "cafe"
+  "喫茶店": "cafe"
+  "しゃぶしゃぶ": "sukiyaki"
+  "すき焼き": "sukiyaki"
+  "ビュッフェ": "buffet"
+  "食べ放題": "buffet"
+  "ラーメン": "ramen"
+  "中華料理": "chuka"
+  "中国料理": "chuka"
+  "寿司": "washoku"
+  "和食": "washoku"
+  "日本料理": "washoku"
+  "居酒屋": "izakaya"
+  "バー": "izakaya"
+  "洋食": "western-food"
+  "レストラン": "western-food"
+  "焼肉": "yakiniku"
+  "ステーキ": "yakiniku"
+  "焼鳥": "yakitori"
+  "串焼き": "yakitori"
+
+# ログ設定
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/umaten_scraper.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# 出力設定
+output:
+  save_html: true  # 生成したHTMLをファイルに保存
+  html_dir: "output/html"
+  save_metadata: true  # メタデータをJSONで保存
+  metadata_dir: "output/metadata"

@@ -1,0 +1,772 @@
+<!--
+=====================================
+ウマ店 店舗詳細ページテンプレート
+WordPress Swellテーマ用カスタムHTML
+=====================================
+-->
+
+<style>
+/* Swellテーマとの調和を保つリセット */
+.restaurant-detail-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.restaurant-detail-wrapper {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #2c3e50;
+    line-height: 1.8;
+    background: #ffffff;
+}
+
+.restaurant-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ヒーローセクション */
+.restaurant-hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.restaurant-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.restaurant-hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    padding: 60px 40px 40px;
+    color: white;
+}
+
+.restaurant-name {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.restaurant-category, .restaurant-area {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* クイックアクション */
+.quick-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: -40px 20px 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.action-button {
+    background: white;
+    color: #2c3e50;
+    padding: 18px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.action-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.action-button.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* 評価セクション */
+.rating-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.overall-rating {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #667eea;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.rating-stars {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.rating-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.rating-item {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.rating-item h4 {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.rating-bar {
+    background: #e2e8f0;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+.rating-fill {
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.rating-score {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #667eea;
+    margin-top: 8px;
+}
+
+/* 情報グリッド */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.info-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.info-card h3 {
+    color: #667eea;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    align-items: flex-start;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 700;
+    color: #64748b;
+    min-width: 120px;
+    font-size: 0.95rem;
+}
+
+.info-value {
+    color: #2c3e50;
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+/* セクションヘッダー */
+.section-header {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.section-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+/* メニューセクション */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.menu-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.menu-content {
+    padding: 25px;
+}
+
+.menu-content h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.menu-content p {
+    color: #64748b;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.menu-price {
+    font-size: 1.5rem;
+    color: #667eea;
+    font-weight: 800;
+}
+
+/* フォトギャラリー */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 280px;
+    cursor: pointer;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* レビューセクション */
+.reviews-container {
+    margin: 40px 0;
+}
+
+.review-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #667eea;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.reviewer-avatar {
+    font-size: 3rem;
+}
+
+.reviewer-info h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+.review-rating {
+    color: #ffd700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    color: #475569;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* 地図セクション */
+.map-container {
+    margin: 60px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+    height: 450px;
+    background: #f8fafc;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* アクセス情報 */
+.access-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0;
+}
+
+.access-info h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.access-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.access-icon {
+    font-size: 1.8rem;
+    min-width: 40px;
+}
+
+.access-text {
+    flex: 1;
+}
+
+.access-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.access-text p {
+    opacity: 0.95;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* 総合評価セクション */
+.comprehensive-review {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 60px 0;
+    border: 3px solid #667eea;
+}
+
+.comprehensive-review h3 {
+    color: #667eea;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.comprehensive-review p {
+    color: #334155;
+    font-size: 1.05rem;
+    line-height: 2;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .restaurant-name {
+        font-size: 2rem;
+    }
+    
+    .restaurant-hero {
+        height: 350px;
+    }
+    
+    .quick-actions {
+        grid-template-columns: 1fr;
+        margin: -30px 10px 30px;
+    }
+    
+    .info-grid, .menu-grid, .photo-gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    .rating-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .overall-rating {
+        font-size: 3rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .info-label {
+        min-width: 100px;
+        font-size: 0.85rem;
+    }
+    
+    .info-value {
+        font-size: 0.85rem;
+    }
+}
+
+/* バッジ */
+.badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 5px 5px 5px 0;
+}
+
+.badge-primary {
+    background: #667eea;
+    color: white;
+}
+
+.badge-success {
+    background: #10b981;
+    color: white;
+}
+
+.badge-warning {
+    background: #f59e0b;
+    color: white;
+}
+
+.badge-info {
+    background: #06b6d4;
+    color: white;
+}
+</style>
+
+<div class="restaurant-detail-wrapper">
+    <!-- ヒーローセクション -->
+    <section class="restaurant-hero">
+        <img src="https://images.unsplash.com/photo-1568471173238-64ed8e7e9c12?w=1200&h=500&fit=crop" alt="たこ焼き 菜々" class="restaurant-hero-image">
+        <div class="restaurant-hero-overlay">
+            <h1 class="restaurant-name">たこ焼き 菜々</h1>
+            <span class="restaurant-category">🐙 たこ焼き専門店</span>
+            <span class="restaurant-area">📍 湯の川温泉エリア</span>
+        </div>
+    </section>
+
+    <!-- クイックアクション -->
+    <div class="restaurant-container">
+        <div class="quick-actions">
+            <a href="tel:不明" class="action-button primary">📞 電話で問い合わせ</a>
+            <a href="https://tabelog.com/hokkaido/A0105/A010501/1060620/" class="action-button" target="_blank">🌐 詳細を見る</a>
+            <a href="#map" class="action-button">📍 地図を見る</a>
+            <button class="action-button" onclick="shareRestaurant()">📤 シェア</button>
+        </div>
+
+        <!-- 評価セクション -->
+        <section class="rating-section">
+            <h2>総合評価</h2>
+            <div class="overall-rating">3.5</div>
+            <div class="rating-stars">★★★★☆</div>
+            <p style="color: #64748b; font-size: 1.1rem; margin-top: 15px;">湯の川温泉駅至近の気軽に楽しめるたこ焼き店</p>
+            
+            <div class="rating-details">
+                <div class="rating-item">
+                    <h4>料理の味</h4>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 70%"></div>
+                    </div>
+                    <div class="rating-score">3.5</div>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 8px;">関西風の本格的なたこ焼きを函館で味わえる貴重なお店。外はカリッと中はトロッとした食感が魅力です。</p>
+                </div>
+                
+                <div class="rating-item">
+                    <h4>サービス</h4>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 68%"></div>
+                    </div>
+                    <div class="rating-score">3.4</div>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 8px;">テイクアウト中心の気軽な雰囲気。温泉街での食べ歩きに最適な対応をしてくれます。</p>
+                </div>
+                
+                <div class="rating-item">
+                    <h4>雰囲気</h4>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 66%"></div>
+                    </div>
+                    <div class="rating-score">3.3</div>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 8px;">湯の川温泉街の一角にある親しみやすい店構え。観光客も地元の方も気軽に立ち寄れる雰囲気です。</p>
+                </div>
+                
+                <div class="rating-item">
+                    <h4>コストパフォーマンス</h4>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 80%"></div>
+                    </div>
+                    <div class="rating-score">4.0</div>
+                    <p style="color: #64748b; font-size: 0.9rem; margin-top: 8px;">1,000円以内でお腹を満たせるリーズナブルな価格設定。温泉帰りの軽食に最適なコスパの良さが光ります。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 基本情報 -->
+        <section class="section-header">
+            <h2>📋 基本情報</h2>
+            <p>たこ焼き 菜々の詳細情報をご確認ください</p>
+        </section>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>🏪 店舗情報</h3>
+                <div class="info-item">
+                    <span class="info-label">店舗名</span>
+                    <span class="info-value">たこ焼き 菜々<br>Takoyaki Nana</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">ジャンル</span>
+                    <span class="info-value">たこ焼き専門店</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">評価</span>
+                    <span class="info-value">⭐ 3.08（独自評価: 3.5/5.0）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">価格帯</span>
+                    <span class="info-value">ディナー: ～￥999</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>📍 アクセス情報</h3>
+                <div class="info-item">
+                    <span class="info-label">住所</span>
+                    <span class="info-value">〒042-0932<br>北海道函館市湯川町1-26-12<br>Hokkaido, Hakodate-shi, Yukawa-cho 1-26-12</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">最寄り駅</span>
+                    <span class="info-value">函館市電 湯の川温泉駅から徒歩2分（147m）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">駐車場</span>
+                    <span class="info-value">不明（近隣にコインパーキング有）</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>🕐 営業情報</h3>
+                <div class="info-item">
+                    <span class="info-label">営業時間</span>
+                    <span class="info-value">不明（要確認）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">定休日</span>
+                    <span class="info-value">不明</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">電話番号</span>
+                    <span class="info-value">不明</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">予約</span>
+                    <span class="info-value">テイクアウト中心のため要確認</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>💳 支払い・設備</h3>
+                <div class="info-item">
+                    <span class="info-label">支払い方法</span>
+                    <span class="info-value">現金<br><span class="badge badge-warning">電子マネー不可</span></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">喫煙</span>
+                    <span class="info-value"><span class="badge badge-success">全席禁煙</span></span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">座席数</span>
+                    <span class="info-value">不明（テイクアウト中心）</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">個室</span>
+                    <span class="info-value">なし</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- メニュー情報 -->
+        <section class="section-header">
+            <h2>🍽️ おすすめメニュー</h2>
+            <p>本格的な関西風たこ焼きをお楽しみください</p>
+        </section>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1606039845463-2c670c4e9e0e?w=400&h=300&fit=crop" alt="たこ焼き（ソース）" class="menu-image">
+                <div class="menu-content">
+                    <h3>🐙 たこ焼き（ソース）</h3>
+                    <p>外はカリッと中はトロトロの王道たこ焼き。特製ソースとかつお節、青のりの香りが食欲をそそります。北海道産のタコを使用した贅沢な一品です。</p>
+                    <div class="menu-price">￥500〜</div>
+                    <span class="badge badge-primary">人気No.1</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1583664050718-f29d05c32a2f?w=400&h=300&fit=crop" alt="たこ焼き（塩）" class="menu-image">
+                <div class="menu-content">
+                    <h3>🧂 たこ焼き（塩）</h3>
+                    <p>素材の味を活かした塩味バージョン。タコの旨味と生地の甘みがダイレクトに感じられる通好みの味わい。あっさりとしていて何個でも食べられます。</p>
+                    <div class="menu-price">￥500〜</div>
+                    <span class="badge badge-info">さっぱり</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1625937286074-9ca519d5d9df?w=400&h=300&fit=crop" alt="たこ焼き（ねぎマヨ）" class="menu-image">
+                <div class="menu-content">
+                    <h3>🧅 たこ焼き（ねぎマヨ）</h3>
+                    <p>たっぷりのネギとマヨネーズのコンビネーションが絶妙。クリーミーな味わいとネギのシャキシャキ感がアクセントになった人気メニューです。</p>
+                    <div class="menu-price">￥600〜</div>
+                    <span class="badge badge-success">おすすめ</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- フォトギャラリー -->
+        <section class="section-header">
+            <h2>📸 フォトギャラリー</h2>
+            <p>たこ焼き 菜々の雰囲気をご覧ください</p>
+        </section>
+
+        <div class="photo-gallery">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1606039845463-2c670c4e9e0e?w=400&h=300&fit=crop" alt="たこ焼き調理風景">
+                <div class="gallery-overlay">熱々のたこ焼き</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1583664050718-f29d05c32a2f?w=400&h=300&fit=crop" alt="たこ焼きアップ">
+                <div class="gallery-overlay">外はカリッと中はトロトロ</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="店舗外観イメージ">
+                <div class="gallery-overlay">温泉街の一角に佇む</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1625937286074-9ca519d5d9df?w=400&h=300&fit=crop" alt="たこ焼きバリエーション">
+                <div class="gallery-overlay">豊富なトッピング</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1568471173238-64ed8e7e9c12?w=400&h=300&fit=crop" alt="たこ焼き盛り付け">
+                <div class="gallery-overlay">食べ歩きに最適</div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=400&h=300&fit=crop" alt="湯の川温泉街">
+                <div class="gallery-overlay">湯の川温泉エリア</div>
+            </div>
+        </div>
+
+        <!-- アクセス情報 -->
+        <section class="access-info">
+            <h3>🚃 アクセス情報</h3>
+            
+            <div class="access-item">
+                <div class="access-icon">🚊</div>
+                <div class="access-text">
+                    <h4>電車でのアクセス</h4>
+                    <p>函館市電「
