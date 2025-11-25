@@ -287,17 +287,40 @@ WordPress Swellテーマ用カスタムHTML
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "{name}",
+  "image": "{hero_image}",
   "address": {{
     "@type": "PostalAddress",
     "addressLocality": "{area}",
-    "streetAddress": "{address}"
+    "streetAddress": "{address}",
+    "addressCountry": "JP"
   }},
+  "geo": {{
+    "@type": "GeoCoordinates",
+    "addressCountry": "JP"
+  }},
+  "url": "{detail_url}",
+  "telephone": "{phone}",
+  "servesCuisine": "{category}",
+  "priceRange": "{budget_dinner}",
+  "openingHours": "{business_hours}",
   "aggregateRating": {{
     "@type": "AggregateRating",
     "ratingValue": "{rating_value:.1f}",
-    "bestRating": "5"
+    "bestRating": "5",
+    "worstRating": "1"
   }},
-  "priceRange": "{budget_dinner}"
+  "review": {{
+    "@type": "Review",
+    "author": {{
+      "@type": "Organization",
+      "name": "ウマ店"
+    }},
+    "reviewRating": {{
+      "@type": "Rating",
+      "ratingValue": "{rating_value:.1f}",
+      "bestRating": "5"
+    }}
+  }}
 }}
 </script>
 
